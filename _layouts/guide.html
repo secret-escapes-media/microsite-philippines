@@ -1,0 +1,83 @@
+---
+layout: default
+---
+{% assign guide-highlights = site.data.highlights | where:'guide-class',page.class %}
+
+<section class="section__intro align-center">
+  <div class="row row--padding">
+    {{ page.intro }}
+  </div>
+</section>
+
+
+
+<section class="section--padding-large bg--white">
+  <div class="row row--padding">
+
+    {% for section in page.sections %}
+    <div class="bob">
+      <div class="bob__image bg-image bg-image--ratio bg-image--ratio-4-3" style="background-image:url('{{ site.baseurl }}/img/bg/banner-overview.jpg');"></div>
+      <div class="bob__text">
+        <h2 class="title title--smaller title--upper title--expanded">{{ section.title }}</h2>
+        {{ section.content }}
+
+        {% assign section-highlights = guide-highlights | where:'guide-section-class',section.class %}
+        {% for highlight in section-highlights %}
+          {% include highlight.html class="small" %}
+        {% endfor %}
+
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+
+
+<section class="section--padding-large bg--theme-primary invert-text align-center">
+  <div class="row row--padding">
+    <h2 class="title title--medium title--upper title--expanded">Continue exploring</h2>
+    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Maecenas faucibus mollis interdum.</p>
+    <a href="{{ site.baseurl }}/explore" class="btn btn--invert">Keep exploring</a>
+  </div>
+</section>
+
+
+
+
+<div class="js-modal modal modal--vertical-align is-closed" id="modal-highlights">
+  <div class="modal__wrap row row--padding">
+    <div class="modal__content" id="modal__slider">
+
+      {% for highlight in guide-highlights %}
+      <div class="slide modal__item modal__item-inactive row row--columns-6-6 row--columns-vertical-align" id="modal__item-{{ highlight.class }}">
+
+        <div class="row__column">
+          <div class="js-close-modal modal__close"></div>
+          <div class="bg-image bg-image--ratio-16-9 bg-image--large--ratio-3-2" style="background-image: url('{{ site.baseurl }}/img/content/highlight-{{ highlight.class }}.jpg');"></div>
+        </div>
+
+        <div class="row__column modal__item__content">
+          <h2 class="title title--small title--expanded title--upper">{{ highlight.title }}</h2>
+          <p class="card__location">{{ highlight.location }}</p>
+          <hr />
+          <p>{{ highlight.content }}</p>
+        </div>
+
+      </div>
+      {% endfor %}
+
+      <!-- MODAL SLIDER NAVIGATION -->
+      <div class="modal__slider-nav">
+        <a class="modal__slider-previous" id="modal_slider--previous" href="javascript:void(0);">
+          <img class="js-svg-swap" width="20" src="{{ site.baseurl }}/img/icons/arrow-left-white.png" alt="<">
+        </a>
+        <a class="modal__slider-next" id="modal_slider--next" href="javascript:void(0);">
+          <img class="js-svg-swap" width="20" src="{{ site.baseurl }}/img/icons/arrow-right-white.png" alt=">">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>

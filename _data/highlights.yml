@@ -1,0 +1,109 @@
+
+##  =========================
+##  HIGHLIGHTS
+##  =========================
+
+- title: Highlight 1
+  class: highlight-1
+  location: Location
+  content: >
+    <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+    <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+
+- title: Highlight 2
+  class: highlight-2
+  location: Location
+  content: >
+    <p class="p--lead">Curabitur blandit tempus porttitor.</p>
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+
+- title: Highlight 3
+  class: highlight-3
+  location: Location
+  content: >
+    <p class="p--lead">Vestibulum id ligula porta felis euismod semper.</p>
+    <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+
+
+##  =========================
+##  GUIDE 1
+##  =========================
+
+- title: G1S1 H1
+  class: highlight-1
+  guide-class: guide-1
+  guide-section-class: guide-section-1
+  location: Location
+  content: >
+    <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+    <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+
+- title: G1S1 H2
+  class: highlight-1
+  guide-class: guide-1
+  guide-section-class: guide-section-1
+  location: Location
+  content: >
+    <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+    <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+
+- title: G1S2 H1
+  class: highlight-2
+  guide-class: guide-1
+  guide-section-class: guide-section-2
+  location: Location
+  content: >
+    <p class="p--lead">Curabitur blandit tempus porttitor.</p>
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+
+- title: G1S3 H1
+  class: highlight-2
+  guide-class: guide-1
+  guide-section-class: guide-section-3
+  location: Location
+  content: >
+    <p class="p--lead">Curabitur blandit tempus porttitor.</p>
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+
+
+
+##  =========================
+##  GUIDE 2
+##  =========================
+
+- title: G2S1 H1
+  class: highlight-1
+  guide-class: guide-2
+  guide-section-class: guide-section-1
+  location: Location
+  content: >
+    <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+    <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+
+- title: G2S2 H1
+  class: highlight-1
+  guide-class: guide-2
+  guide-section-class: guide-section-2
+  location: Location
+  content: >
+    <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+    <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+
+- title: G2S2 H2
+  class: highlight-2
+  guide-class: guide-2
+  guide-section-class: guide-section-2
+  location: Location
+  content: >
+    <p class="p--lead">Curabitur blandit tempus porttitor.</p>
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+
+- title: G2S3 H1
+  class: highlight-2
+  guide-class: guide-2
+  guide-section-class: guide-section-3
+  location: Location
+  content: >
+    <p class="p--lead">Curabitur blandit tempus porttitor.</p>
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>

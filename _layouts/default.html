@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body id="top" {% if page.title %}class="{{ page.title | slugify }}" data-current-page="{{ page.title | slugify }}"{% endif %}>
+
+    {% include tracking.html %}
+
+    {% include header.html %}
+
+    {% include title-banner.html %}
+
+    {{ content }}
+
+    {% unless page.class == 'offers' %}
+      {% include offer-promo.html %}
+    {% endunless %}
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

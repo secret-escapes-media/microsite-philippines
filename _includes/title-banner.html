@@ -1,0 +1,16 @@
+<section class="title-banner" style="background-image: url({{site.baseurl}}/img/bg/banner-{{ page.class }}.jpg);">
+  <div class="title-banner__wrap">
+    <div class="title-banner__content row row--padding invert-text align-center">
+
+      {% unless page.class == 'overview' %}
+        <span class="title title--smallest title--upper title--expanded title--margin-none">{{ site.title }}</span>
+      {% endunless %}
+      <h1 class="title title--largest title--display title--margin-none">
+        {% if page.banner-title %}{{ page.banner-title }}{% else %}{{ page.title }}{% endif %}
+      </h1>
+
+    </div>
+  </div>
+  <div class="title-banner__overlay"></div>
+</section>
+{% include microsite-nav.html %}

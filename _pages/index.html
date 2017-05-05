@@ -1,0 +1,76 @@
+---
+
+layout: default
+title: Overview
+class: overview
+nav-order: 1
+
+banner-title:
+
+intro: >
+  <p class="p--lead">A resplendent collection of over 7,000 island paradises, where clear shallow waters lap endless sand banks and hidden coves – a treat for explorers and deck-chair loungers alike.</p>
+  <p>Throw-in a culinary tradition steeped in Spanish and southeast Asian influences, characterised by a lip-smacking medley of spices, a people who are renowned for their warmth and hospitality, and tropical climes that offer endless sun-kissed lounging, and the ingredients are there for serene escapes in a veritable paradise.</p>
+  <p>Discover the limestone crags that silently pierce the waters of Bacuit Bay, offering an impressive scene from above or below the warm water, or immerse yourself in the colourful vivacity of the country’s fiestas, bedecked with technicolour dress and hypnotic dancing. Unpick the sprawling metropolis of Manila, or simply feel the crisp-white sand under your toes on White Beach in Boracay until the glowing sun dips and sinks below the luminous horizon. </p>
+
+
+
+sections:
+
+  - title: An Island Sprawl
+    content: >
+      <p>The Philippine islands are consistently voted the most cherished in the world and ogling a few pictures proves it’s not hard to see why. Crystal-clear waters reveal schools of tropical fish darting around beneath your feet, undeterred. Startlingly white sands cushion wistful strolls at sunset, while Bancas dart from island to island and fishermen unload their hauls on makeshift piers. The island life will quickly enchant you, mesmerizing any visitor at first glance.</p>
+      <fieldset>
+        <legend>A word to the wise</legend>
+         Be sure to triple-check weather patterns when picking an island. The Philippines are no stranger to typhoons and dramatic weather, but with a bit of careful planning, you can ensure a blissful getaway to your very own tropical paradise. From July to September, the western parts of the country suffer from a heavy monsoon, and typhoon warnings are to be heeded across the country. Plan ahead, and all will be well!
+      </fieldset>
+
+  - title: Curious cooking
+    content: >
+      <p>The food of the Philippines is a sumptuous medley of fiery spices, tropical produce and a curated journey through heat, sourness, and delicacy. Trump cards like balut and dinuguan, the rather stomach-turning fertilized duck egg and offal in blood dishes, don’t do Filipino cooking justice. With influence from Malaysia, China and most interestingly Spain (owing to a colonial past), you’ll find unique dishes like succulent lechon, classic adobo, rich kare kare, and all washed down with the Filipino fave, rum!</p>
+
+  - title: Dynamic Culture
+    content: >
+      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.</p>
+
+  - title: Effortless Indulgence
+    content: >
+      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.</p>
+
+---
+
+
+
+<section class="section__intro align-center">
+  <div class="row row--padding">
+    {{ page.intro }}
+  </div>
+</section>
+
+
+
+<section class="section--padding-large bg--white">
+  <div class="row row--padding">
+
+    {% for section in page.sections %}
+    <div class="bob">
+      <div class="bob__image bg-image bg-image--ratio bg-image--ratio-16-9" style="background-image:url('{{ site.baseurl }}/img/bg/banner-overview.jpg');"></div>
+      <div class="bob__text">
+        <h2 class="title title--smaller title--upper title--expanded">{{ section.title }}</h2>
+        {{ section.content }}
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+
+
+<section class="section--padding-large bg--theme-primary invert-text align-center">
+  <div class="row row--padding">
+    <h2 class="title title--medium title--upper title--expanded">Start exploring</h2>
+    <p class="p--lead">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Maecenas faucibus mollis interdum.</p>
+    <a href="{{ site.baseurl }}/explore" class="btn btn--invert">Start now</a>
+  </div>
+</section>
+

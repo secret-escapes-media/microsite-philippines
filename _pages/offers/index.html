@@ -1,0 +1,45 @@
+---
+
+layout: basic
+title: Offers
+class: offers
+nav-order: 4
+
+intro: >
+  <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+---
+
+
+
+<section class="section__intro align-center">
+  <div class="row row--padding">
+    {{ page.intro }}
+  </div>
+</section>
+
+
+
+<section class="section offers">
+  <div class="row row--padding">
+    {% assign offers = site.data.offers | sort: 'saved' | reverse %}
+    {% for offer in offers %}
+      {% include offer-small.html %}
+    {% endfor %}
+  </div>
+</section>
+
+
+
+<section class="section offer-promo align-center invert-text">
+  <div class="offer-promo__bgs">
+    <div class="offer-promo__bg" style="background-image: url('{{ site.baseurl }}/img/offers/00-general-current-sales/01.jpg')"></div>
+    <div class="offer-promo__bg" style="background-image: url('{{ site.baseurl }}/img/offers/00-general-current-sales/02.jpg')"></div>
+    <div class="offer-promo__bg" style="background-image: url('{{ site.baseurl }}/img/offers/00-general-current-sales/03.jpg')"></div>
+  </div>
+  <div class="row row--padding offer-promo__content">
+    <h2 class="title title--medium title--expanded title--margin-none title--upper">That’s not all we do...</h2>
+    <p class="p--lead">Didn’t see anything to take your fancy? We have loads more offers with savings of up to 70%!</p>
+    <a href="https://www.secretescapes.com/current-sales" class="btn btn--invert">See All Current Sales</a>
+  </div>
+</section>

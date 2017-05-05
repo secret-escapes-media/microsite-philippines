@@ -1,0 +1,141 @@
+
+
+// -------- background image ratios --------
+
+.bg-image {
+
+  // Size div to aspect ratio with background image attributes
+  &--ratio-1-1, &--ratio-4-3, &--ratio-3-2, &--ratio-16-9, &--ratio-21-9, &--ratio-5-2 {
+    display: block;
+    position: relative;
+    @include background-attributes();
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+    }
+  }
+
+  &--ratio-1-1:before   { padding-top: 100%; }
+  &--ratio-4-3:before   { padding-top: 75%; }
+  &--ratio-3-2:before   { padding-top: 66.666666666667%; }
+  &--ratio-16-9:before  { padding-top: 56.25%; }
+  &--ratio-21-9:before  { padding-top: 42.8571429%; }
+  &--ratio-1-3:before  { padding-top: 33.3333333%; }
+
+  @include min-bp(small) {
+    &--small {
+      &--ratio-1-1:before   { padding-top: 100%; }
+      &--ratio-4-3:before   { padding-top: 75%; }
+      &--ratio-3-2:before   { padding-top: 66.666666666667%; }
+      &--ratio-16-9:before  { padding-top: 56.25%; }
+      &--ratio-21-9:before  { padding-top: 42.8571429%; }
+      &--ratio-1-3:before  { padding-top: 33.3333333%; }
+    }
+  }
+  @include min-bp(medium) {
+    &--medium {
+      &--ratio-1-1:before   { padding-top: 100%; }
+      &--ratio-4-3:before   { padding-top: 75%; }
+      &--ratio-3-2:before   { padding-top: 66.666666666667%; }
+      &--ratio-16-9:before  { padding-top: 56.25%; }
+      &--ratio-21-9:before  { padding-top: 42.8571429%; }
+      &--ratio-1-3:before  { padding-top: 33.3333333%; }
+    }
+  }
+  @include min-bp(large) {
+    &--large {
+      &--ratio-1-1:before   { padding-top: 100%; }
+      &--ratio-4-3:before   { padding-top: 75%; }
+      &--ratio-3-2:before   { padding-top: 66.666666666667%; }
+      &--ratio-16-9:before  { padding-top: 56.25%; }
+      &--ratio-21-9:before  { padding-top: 42.8571429%; }
+      &--ratio-1-3:before  { padding-top: 33.3333333%; }
+    }
+  }
+  @include min-bp(xlarge) {
+    &--xlarge {
+      &--ratio-1-1:before   { padding-top: 100%; }
+      &--ratio-4-3:before   { padding-top: 75%; }
+      &--ratio-3-2:before   { padding-top: 66.666666666667%; }
+      &--ratio-16-9:before  { padding-top: 56.25%; }
+      &--ratio-21-9:before  { padding-top: 42.8571429%; }
+      &--ratio-1-3:before  { padding-top: 33.3333333%; }
+    }
+  }
+  @include min-bp(xxlarge) {
+    &--xxlarge {
+      &--ratio-1-1:before   { padding-top: 100%; }
+      &--ratio-4-3:before   { padding-top: 75%; }
+      &--ratio-3-2:before   { padding-top: 66.666666666667%; }
+      &--ratio-16-9:before  { padding-top: 56.25%; }
+      &--ratio-21-9:before  { padding-top: 42.8571429%; }
+      &--ratio-1-3:before  { padding-top: 33.3333333%; }
+    }
+  }
+
+
+  // Vertically centered content in bg-image
+  &__content {
+    @include transition();
+    z-index: $z-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: $white;
+    background-color: transparent;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 1em;
+    @include min-bp(large) {
+      padding: 2em;
+    }
+    .flexbox & {}
+    &__title,
+    &__description {
+      @include transition();
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      padding: 1em;
+    }
+    &__title {
+      opacity: 1;
+      z-index: $z-content;
+    }
+    &__description {
+      @include transition();
+      opacity: 0;
+      margin: 0;
+      z-index: $z-content-upper;
+    }
+  }
+  &:hover {
+    .bg-image__content {
+      background-color: rgba($dark-grey, 0.3);
+      &__title { letter-spacing: 0.09em; }
+      &__title-fade { letter-spacing: 0.09em; opacity: 0; }
+      &__description { opacity: 1; }
+    }
+  }
+
+
+  &--circle { border-radius: 9999999em; }
+  &--shadow { box-shadow: 0 0 5px 0 rgba($dark-grey,0.2); }
+  &--border { border-radius: 5px; }
+  &--zoom   {
+    @include transition();
+    background-size: auto 100%;
+    &:hover {
+      background-size: auto 105%;
+    }
+  }
+
+}

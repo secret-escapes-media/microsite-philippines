@@ -1,0 +1,154 @@
+// all custom styles for the site
+
+body {
+  background-color: $light-grey;
+}
+
+
+// ---------- Site footer ----------
+
+.footer {
+  background-color: $black-85;
+  .site-nav {
+    background-color: $light-grey;
+    border-color: darken($light-grey,10);
+    border-bottom: 0;
+    &__item {
+      border-color: darken($light-grey,10) !important;
+      &:hover {
+        background-color: $white;
+      }
+    }
+  }
+  &__logos {
+    font-size: .9em;
+    padding-top: $margin;
+    padding-bottom: $margin;
+  }
+  .logo {
+    vertical-align: middle;
+    margin-left: ($margin/4);
+    margin-right: ($margin/4);
+  }
+  p { margin-top: .5em; }
+  .logo--secret-escapes { max-width: 110px; }
+  .logo--partner { max-width: 69px; }
+}
+
+// ---------- Section styles ----------
+
+.invert-text {
+  color: $white;
+  &.title, & .title { color: $white; }
+}
+.bg {
+  &--white      { background-color: $white; }
+  &--black      { background-color: $black; }
+  &--light-grey { background-color: $light-grey; }
+  &--dark-grey  { background-color: $dark-grey; }
+  &--text-black     { background-color: $text-black; }
+  &--text-heading   { background-color: $text-heading; }
+  &--text-paragraph { background-color: $text-paragraph; }
+  &--se-orange     { background-color: $se-orange; }
+  &--se-light-grey { background-color: $se-light-grey; }
+  &--se-dark-grey  { background-color: $se-dark-grey; }
+  &--theme-primary   { background-color: $partner-primary; }
+  &--theme-secondary { background-color: $partner-secondary; }
+}
+
+
+// ---------- button ----------
+
+.btn {
+  @include transition;
+  display:inline-block;
+  padding: .5em 3em;
+  border-radius: 5px;
+  border: 2px solid $partner-primary;
+  color: $partner-primary;
+  font-family: $title-font-family;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  &:hover {
+    color: white;
+    background-color: darken($partner-primary, 10);
+    text-decoration: none;
+  }
+  * + & { margin-top: 1.5em; }
+
+  &--small { font-size: 0.8em; padding: .3em 2em; }
+  &--large { font-size: 1.2em; padding: .6em 3em; }
+
+  &--solid { color: white; border: 0; background-color: $partner-primary; }
+  &--primary { background-color: $partner-primary; }
+
+  &--secondary { background-color: $partner-secondary; }
+  &--secondary:hover { background-color: darken($partner-secondary, 10); }
+
+  &--invert {
+    color: $partner-primary; border: 0; background-color: $white;
+    &.btn--primary { color: $partner-primary; }
+    &.btn--secondary { color: $partner-secondary; }
+    &.btn--secondary:hover { background-color: darken($partner-secondary, 10); color: $white; }
+  }
+
+  &--se {
+    background-color: $se-orange;
+    &:hover { background-color: darken($se-orange, 10); }
+    &.btn--invert { color: $se-orange; background-color: $white; }
+  }
+}
+
+
+// ---------- card ----------
+
+.card {
+  display: block;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: $white;
+  border: 1px solid $light-grey;
+  &:not(:last-child){
+    margin-bottom: 2em;
+  }
+
+  &__image { }
+  &__title {
+    padding: 1em 1.5em;
+    border-bottom: 1px solid $light-grey;
+    .card--small & { padding: 1em; }
+  }
+  &__content {
+    padding: 1em 1.5em;
+    .card--small & { padding: 1em; }
+  }
+
+  &__location {
+    margin-left: 1.5em;
+    text-indent: -1.5em;
+    font-size: 0.85em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    .card--small & { margin-top: 0.25em; }
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1.1em;
+      width: 1em;
+      margin-right: .5em;
+      margin-bottom: .2em;
+      vertical-align: middle;
+      background-image: url( "../img/icons/map-pin.png" );
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-size: contain;
+      .svg & { background-image: url( "../img/icons/map-pin.svg" ); }
+    }
+  }
+}
+
