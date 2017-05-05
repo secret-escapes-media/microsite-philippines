@@ -5,8 +5,9 @@
 
 $core-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 $main-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-$title-font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
-$display-font-family: 'Hanalei', 'Helvetica Neue', sans-serif;
+$title-font-family: 'Roboto Slab', 'Helvetica Neue', sans-serif;
+$display-font-family: 'Passero One', 'Helvetica Neue', sans-serif;
+
 
 html { font-size: 62.5%; }
 body,
@@ -25,19 +26,20 @@ input, textarea, keygen, select, button {
 .title {
   font-family: $title-font-family;
   color: $text-heading;
-  letter-spacing: .075em;
+  letter-spacing: .025em;
   line-height: 1.15;
   + * { margin-top: 0.75em; }
 
-  &--display { font-family: $display-font-family; line-height: 1; }
+  &--display { font-family: $display-font-family; line-height: 1; letter-spacing: 0;}
 
   &--spacing {
     * + & { margin-top: 15px; }
   }
-  &--margin { margin-top: 1.5em; }
-  &--margin-none {
-    margin-top: 0;
-    + * { margin-top: 0; }
+  &--margin {
+    margin-top: 1.5em;
+    &-small + * { margin-top: 0.5; }
+    &-none { margin-top: 0; }
+    &-none + * { margin-top: 0; }
   }
 
   &--sub-heading { margin-top: 0 !important; }
@@ -190,6 +192,7 @@ hr {
 }
 .hr {
   &--center { width: 80px; margin-left: auto; margin-right: auto; }
+  &--margin { margin-top: 2em; margin-bottom: 2em; }
 }
 
 a {

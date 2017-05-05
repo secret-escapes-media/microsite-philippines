@@ -3,27 +3,29 @@
 ##  HIGHLIGHTS
 ##  =========================
 
-- title: Highlight 1
+- title: Boracay
   class: highlight-1
   location: Location
   content: >
-    <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-    <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+    <p class="p--lead">White Beach & Mount Luho views</p>
 
-- title: Highlight 2
+- title: Chocolate Hills
   class: highlight-2
   location: Location
   content: >
-    <p class="p--lead">Curabitur blandit tempus porttitor.</p>
-    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+    <p class="p--lead">Zip-line, river, backpacking and nature</p>
 
-- title: Highlight 3
+- title: Taal Volcano
   class: highlight-3
   location: Location
   content: >
-    <p class="p--lead">Vestibulum id ligula porta felis euismod semper.</p>
-    <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    <p class="p--lead">Volcano, lake, hiking, protected area and mountain</p>
 
+- title: Banaue Rice Terraces
+  class: highlight-3
+  location: Location
+  content: >
+    <p class="p--lead">Hiking</p>
 
 
 ##  =========================

@@ -128,7 +128,7 @@
 
 
   &--circle { border-radius: 9999999em; }
-  &--shadow { box-shadow: 0 0 5px 0 rgba($dark-grey,0.2); }
+  &--shadow { box-shadow: 0 0 10px 0 rgba($dark-grey,0.25); }
   &--border { border-radius: 5px; }
   &--zoom   {
     @include transition();

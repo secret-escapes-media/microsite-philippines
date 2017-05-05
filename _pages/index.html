@@ -5,7 +5,10 @@ title: Overview
 class: overview
 nav-order: 1
 
-banner-title:
+banner-supertitle:
+banner-title: Discover the Philippines
+banner-subtitle:
+banner-content: A resplendent collection of over 7,000 island paradises, where clear shallow waters lap endless sand banks and hidden coves – a treat for explorers and deck-chair loungers alike.
 
 intro: >
   <p class="p--lead">A resplendent collection of over 7,000 island paradises, where clear shallow waters lap endless sand banks and hidden coves – a treat for explorers and deck-chair loungers alike.</p>
@@ -17,24 +20,24 @@ intro: >
 sections:
 
   - title: An Island Sprawl
+    class: island
     content: >
       <p>The Philippine islands are consistently voted the most cherished in the world and ogling a few pictures proves it’s not hard to see why. Crystal-clear waters reveal schools of tropical fish darting around beneath your feet, undeterred. Startlingly white sands cushion wistful strolls at sunset, while Bancas dart from island to island and fishermen unload their hauls on makeshift piers. The island life will quickly enchant you, mesmerizing any visitor at first glance.</p>
-      <fieldset>
-        <legend>A word to the wise</legend>
-         Be sure to triple-check weather patterns when picking an island. The Philippines are no stranger to typhoons and dramatic weather, but with a bit of careful planning, you can ensure a blissful getaway to your very own tropical paradise. From July to September, the western parts of the country suffer from a heavy monsoon, and typhoon warnings are to be heeded across the country. Plan ahead, and all will be well!
-      </fieldset>
 
-  - title: Curious cooking
+  - title: Curious Cooking
+    class: cooking
     content: >
       <p>The food of the Philippines is a sumptuous medley of fiery spices, tropical produce and a curated journey through heat, sourness, and delicacy. Trump cards like balut and dinuguan, the rather stomach-turning fertilized duck egg and offal in blood dishes, don’t do Filipino cooking justice. With influence from Malaysia, China and most interestingly Spain (owing to a colonial past), you’ll find unique dishes like succulent lechon, classic adobo, rich kare kare, and all washed down with the Filipino fave, rum!</p>
 
   - title: Dynamic Culture
+    class: culture
     content: >
-      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.</p>
+      <p>Pre-colonial heritage have intertwined seamlessly with a strong Spanish influence, offering a colourful menagerie of traditions and festivities. With a remarkably 80% Catholic population, Spanish roots offer up colourful fiestas, festivals marking saints days throughout the year. Karaoke is also huge – a plethora of bars offer  shrieks and pitch-perfect renditions much to the delight of, well, everyone. Blame the American occupation…</p>
 
   - title: Effortless Indulgence
+    class: indulgence
     content: >
-      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.</p>
+      <p>Effortless relaxation awaits – from catatonic sunlounger bathing to groan-inducing beachfront massages, the Philippines are set to indulge you with every whim that ensures total comfort. For those that seek more adventure, the islands offer superb diving, with WWII wrecks and acclaimed coral reefs to explore. Wildlife lovers can revel in this bountiful land, where new animals are still being discovered. </p>
 
 ---
 
@@ -53,9 +56,9 @@ sections:
 
     {% for section in page.sections %}
     <div class="bob">
-      <div class="bob__image bg-image bg-image--ratio bg-image--ratio-16-9" style="background-image:url('{{ site.baseurl }}/img/bg/banner-overview.jpg');"></div>
+      <div class="bob__image bg-image bg-image--ratio bg-image--ratio-4-3 bg-image--border bg-image--shadow" style="background-image:url('{{ site.baseurl }}/img/content/overview-{{ section.class }}.jpg');"></div>
       <div class="bob__text">
-        <h2 class="title title--smaller title--upper title--expanded">{{ section.title }}</h2>
+        <h2 class="title title--smaller title--upper">{{ section.title }}</h2>
         {{ section.content }}
       </div>
     </div>

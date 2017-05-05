@@ -1,11 +1,16 @@
 <a href="{{ guide.url }}" class="row__column bg--dark-grey invert-text align-center bg-image bg-image--border bg-image--zoom bg-image--ratio bg-image--ratio-1-1" style="background-image: url('{{ site.baseurl }}/img/bg/banner-{{ guide.class }}.jpg');">
   <div class="bg-image__content">
     <div>
-      <span class="title title--tiny title--expanded title--upper title--margin-none">Our guide to</span>
-      <h2 class="title title--larger title--upper title--display">{{ guide.title }}</h2>
-      <hr class="hr--center" />
-      <p><strong>See:</strong> {{ guide.see }}</p>
-      <p><strong>Great for:</strong> {{ guide.for }}</p>
+
+      <span class="title title--micro title--expanded title--upper title--margin-">Our guide to</span>
+      <hr class="hr--center hr--margin" />
+      <h2 class="title title--larger title--display">{{ guide.title }}</h2>
+      <hr class="hr--center hr--margin" />
+      <p>
+        <strong>See:</strong> {{ guide.see }}<br />
+        <strong>Great for:</strong> {{ guide.for }}
+      </p>
+
     </div>
   </div>
 </a>

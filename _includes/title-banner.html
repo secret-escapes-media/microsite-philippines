@@ -2,12 +2,31 @@
   <div class="title-banner__wrap">
     <div class="title-banner__content row row--padding invert-text align-center">
 
-      {% unless page.class == 'overview' %}
-        <span class="title title--smallest title--upper title--expanded title--margin-none">{{ site.title }}</span>
-      {% endunless %}
-      <h1 class="title title--largest title--display title--margin-none">
+
+
+      {% if page.banner-supertitle %}
+        <p class="title title--smaller title--upper title--expanded title--margin-none">{{ page.banner-supertitle }}</p>
+      {% else %}
+        {% unless page.class == 'overview' %}
+          <p class="title title--smaller title--upper title--expanded">{{ site.title }}</p>
+        {% endunless %}
+      {% endif %}
+
+      <h1 class="title-banner__title title title--largest title--display title--margin-none">
         {% if page.banner-title %}{{ page.banner-title }}{% else %}{{ page.title }}{% endif %}
       </h1>
+
+      {% if page.banner-subtitle %}
+        <hr class="hr--center hr--margin" />
+        <p class="title title--smallest title--upper title--expanded title--margin-none">{{ page.banner-subtitle }}</p>
+      {% endif %}
+
+      {% if page.banner-content %}
+        <hr class="hr--center hr--margin" />
+        <p class="p--lead">{{ page.banner-content }}</p>
+      {% endif %}
+
+
 
     </div>
   </div>
