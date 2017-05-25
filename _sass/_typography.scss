@@ -5,8 +5,8 @@
 
 $core-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 $main-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-$title-font-family: 'Roboto Slab', 'Helvetica Neue', sans-serif;
-$display-font-family: 'Passero One', 'Helvetica Neue', sans-serif;
+$title-font-family: 'Barrio', 'Helvetica Neue', sans-serif;
+$display-font-family: 'Rock Salt', 'Helvetica Neue', sans-serif;
 
 
 html { font-size: 62.5%; }
@@ -24,13 +24,12 @@ input, textarea, keygen, select, button {
 // -------- Headings --------
 
 .title {
-  font-family: $title-font-family;
   color: $text-heading;
   letter-spacing: .025em;
   line-height: 1.15;
   + * { margin-top: 0.75em; }
 
-  &--display { font-family: $display-font-family; line-height: 1; letter-spacing: 0;}
+  &--display { font-family: $title-font-family; line-height: 1; }
 
   &--spacing {
     * + & { margin-top: 15px; }
@@ -81,8 +80,8 @@ input, textarea, keygen, select, button {
   &--small { font-size: .85em; }
 
   &--light     { font-weight: 300; }
-  &--bold      { font-weight: 500; }
-  &--bolder    { font-weight: 600; }
+  &--bold      { font-weight: 600; }
+  &--bolder    { font-weight: 700; }
   &--condense  { letter-spacing: 0; }
   &--expanded  { letter-spacing: .1em; }
   &--tight     { line-height: .9; }
@@ -91,7 +90,7 @@ input, textarea, keygen, select, button {
   &--italic    { font-style: italic; }
   @include bp(large){
     &--lead {
-      font-size: 1.3em;
+      font-size: 1.2em;
       line-height: 1.55;
     }
   }
@@ -187,7 +186,7 @@ strong        { font-weight: 800; }
 hr {
   border: 0;
   height: 1px;
-  background-color: $light-grey;
+  background-color: darken($light-grey, 10);
   margin: 1em 0;
 }
 .hr {

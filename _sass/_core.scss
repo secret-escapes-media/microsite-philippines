@@ -5,8 +5,9 @@
 
 $white:       #fff;
 $black:       #000;
-$light-grey:  #eeeeee;
-$dark-grey:  #1a1a1a;
+$light-grey:  #f2f2f2;
+$grey:        #a2a2a2;
+$dark-grey:   #1a1a1a;
 
 $white-15:    rgba(255,255,255,.15);
 $white-25:    rgba(255,255,255,.25);
@@ -34,9 +35,10 @@ $se-dark-grey-5:  rgba(41,39,40,.5);
 $se-dark-grey-66: rgba(41,39,40,.66);
 $se-dark-grey-85: rgba(41,39,40,.85);
 
-$partner-primary:   #263952;
-$partner-secondary: #3A5A83;
-$partner-tertiary: #E7CB9B;
+$partner-primary:   #D5970D;
+$partner-secondary: #28563e;
+$partner-tertiary: #2C98A0;
+$partner-fourth: #B25051;
 
 $text-black:      #2f2f2f;
 $text-heading:    #2f2f2f;
@@ -45,7 +47,8 @@ $text-paragraph:  #7a7a7a;
 
 // -------- breakpoints --------
 
-$xxxlarge:  1200px;
+$xxxxlarge:  1200px;
+$xxxlarge:  1080px;
 $xxlarge:   970px;
 $xlarge:    850px;
 $large:     650px;

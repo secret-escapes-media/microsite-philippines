@@ -3,7 +3,9 @@ layout: default
 ---
 {% assign guide-highlights = site.data.highlights | where:'guide-class',page.class %}
 
-<section class="section__intro align-center">
+
+
+<section class="section__intro intro-guide align-center">
   <div class="row row--padding">
     {{ page.intro }}
   </div>
@@ -11,37 +13,83 @@ layout: default
 
 
 
-<section class="section--padding-large bg--white">
+
+
+{% for section in page.sections %}
+
+<section class="section--padding-large bg--{% cycle 'white', 'light-grey'%}" id="section-{{ section.class }}">
+
   <div class="row row--padding">
-
-    {% for section in page.sections %}
     <div class="bob">
-      <div class="bob__image bg-image bg-image--ratio bg-image--ratio-4-3 bg-image--border bg-image--shadow" style="background-image:url('{{ site.baseurl }}/img/bg/banner-overview.jpg');"></div>
+
+      <div class="bob__image bg-image bg-image--border bg-image--shadow bg-image--ratio bg-image--ratio-4-3" style="background-image:url('{{ site.baseurl }}/img/content/guides/{{ page.class }}-{{ section.class }}.jpg');"></div>
+
       <div class="bob__text">
-        <h2 class="title title--smaller title--upper title--expanded">{{ section.title }}</h2>
+        <h2 class="title title--medium title--upper title--display">{{ section.title }}</h2>
         {{ section.content }}
-
-        {% assign section-highlights = guide-highlights | where:'guide-section-class',section.class %}
-        {% for highlight in section-highlights %}
-          {% include highlight.html class="small" %}
-        {% endfor %}
-
       </div>
-    </div>
-    {% endfor %}
 
+    </div>
   </div>
+
+  {% assign section-highlights = guide-highlights | where:'guide-section-class',section.class %}
+  {% if section-highlights.size > 0 %}
+  <div class="row align-center">
+    <div class="row--padding row--columns-3-3-3-3-gutters highlights {% if section-highlights.size > 4 %} highlights--tease{% endif %}" id="highlights-{{ section.class }}">
+      {% for highlight in section-highlights %}
+        {% include highlight.html %}
+      {% endfor %}
+    </div>
+    {% if section-highlights.size > 4 %}
+      <a href="#highlights-{{ section.class }}" data-target="highlights-{{ section.class }}" class="highlights__btn btn btn--solid btn--large" data-label="View all highlights" data-alt-label="Hide highlights">View all {{ section.title }} highlights</a>
+    {% endif %}
+  </div>
+  {% endif %}
+
+</section>
+
+{% endfor %}
+
+
+
+
+
+
+<section class="section--padding-large bg--white" id="highlights">
+
+  <div class="row row--padding align-center">
+    <h2 class="title title--small title--upper title--expanded title--light">All highlights of {{ page.title }}</h2>
+    <hr class="hr--center hr--margin">
+  </div>
+
+  <div class="row align-center">
+    <div class="row--padding row--columns-4-4-4-gutters highlights {% if guide-highlights.size > 9 %} highlights--tease{% endif %}" id="highlights-{{ section.class }}">
+      {% for highlight in guide-highlights %}
+        {% include highlight.html class="small" %}
+      {% endfor %}
+    </div>
+    {% if guide-highlights.size > 9 %}
+      <a href="javascript:void(0);" data-target="highlights-{{ section.class }}" class="highlights__btn btn btn--small btn--solid btn--large">View all {{ section.title }} highlights</a>
+    {% endif %}
+  </div>
+
 </section>
 
 
 
-<section class="section--padding-large bg--theme-primary invert-text align-center">
+
+
+
+<section class="section--padding-large bg--theme-tertiary invert-text align-center">
   <div class="row row--padding">
-    <h2 class="title title--medium title--upper title--expanded">Continue exploring</h2>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Maecenas faucibus mollis interdum.</p>
+    <h2 class="title title--medium title--upper title--display">Continue exploring</h2>
+    <p class="p--lead">But wait there's more! Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.</p>
     <a href="{{ site.baseurl }}/explore" class="btn btn--invert">Keep exploring</a>
   </div>
 </section>
+
+
+{% include offer-promo.html %}
 
 
 
@@ -55,12 +103,12 @@ layout: default
 
         <div class="row__column">
           <div class="js-close-modal modal__close"></div>
-          <div class="bg-image bg-image--ratio-16-9 bg-image--large--ratio-3-2" style="background-image: url('{{ site.baseurl }}/img/content/highlight-{{ highlight.class }}.jpg');"></div>
+          <div class="bg-image bg-image--ratio-16-9 bg-image--large--ratio-3-2" style="background-image: url('{{ site.baseurl }}/img/content/highlights/{{ highlight.class }}.jpg');"></div>
         </div>
 
         <div class="row__column modal__item__content">
-          <h2 class="title title--small title--expanded title--upper">{{ highlight.title }}</h2>
-          <p class="card__location">{{ highlight.location }}</p>
+          <h2 class="title title--small title--upper title--display">{{ highlight.title }}</h2>
+          {% if highlight.location %}<p class="card__location">{{ highlight.location }}</p>{% endif %}
           <hr />
           <p>{{ highlight.content }}</p>
         </div>

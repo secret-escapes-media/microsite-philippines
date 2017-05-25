@@ -59,23 +59,6 @@
   }
 
 
-///////////////////////////////////////
-//      Parallax
-//      [ example: <div class="parallax" data-parallax-speed="0.2"> ]
-///////////////////////////////////////
-
-  // $(document).scroll(function(){
-  //   var scrolled = $(document).scrollTop();
-  //   $('.parallax').each(function(){
-  //     var speed = $(this).attr('data-parallax-speed');
-  //     var offset = $(this).offset();
-  //     var parallax = -(scrolled - offset.top) * speed ;
-  //     $(this).css('background-position', 'center ' + parallax + 'px');
-  //   });
-  // });
-
-
-
 
 ///////////////////////////////////////
 //    Generic modal
@@ -220,6 +203,57 @@ function bannerfade(){
 $(document).scroll(function() {
 	bannerfade();
 });
+
+
+///////////////////////////////////////
+//       Reveal Highlights
+///////////////////////////////////////
+
+$('.highlights--tease').each(function(){
+  var highlightsHeight = $(this).height();
+  $(this).attr("data-height", highlightsHeight);
+  $(this).addClass("highlights--hide");
+});
+
+$('.highlights__btn').click(function(){
+  var target = $(this).prev();
+  var highlightsHeight = target.attr('data-height');
+
+  $(this).fadeOut(); // hide btn
+
+  target.animate({'height': highlightsHeight + 'px'},500);
+  target.removeClass('highlights--hide');
+
+});
+
+
+///////////////////////////////////////
+//       Folding sections
+///////////////////////////////////////
+
+$('.fold').each(function(){
+  var foldHeight = $(this).height();
+  $(this).slideUp();
+});
+
+$('.fold__btn').click(function(){
+
+  var label = $(this).attr('data-label');
+  var altLabel = $(this).attr('data-alt-label');
+
+  var target = $(this).attr('data-target');
+  var targetFold = $('#' + target).find('.fold');
+
+  if(targetFold.hasClass('fold-open')){
+    targetFold.slideUp().removeClass('fold-open');
+    $(this).html(label);
+  }else{
+    targetFold.slideDown().addClass('fold-open');
+    $(this).html(altLabel);
+  }
+
+});
+
 
 ///////////////////////////////////////////////////////////////////////////////
 });})(jQuery, this); // on ready end

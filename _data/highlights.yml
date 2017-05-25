@@ -1,111 +1,158 @@
 
 ##  =========================
-##  HIGHLIGHTS
+##  LUZON : luzon
+##  Sections :
 ##  =========================
+
+- title: Taal Volcano Hike
+  class: taal-volcano-hike
+  location: Manila
+  guide-class: luzon
+  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+- title: Nagcarlan Underground Cemetery
+  class: nagcarlan-underground-cemetery
+  location: Manila
+  guide-class: luzon
+  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+##  =========================
+##  PANAY : panay
+##  Sections : panay, cebu, bohol, negros
+##  =========================
+
+- title: Bakhawan Eco-Park
+  class: bakhawan-eco-park
+  location: Bakhawan
+  guide-class: panay
+  guide-section-class: panay
+  content: 220 hectares of sprawling mangroves offer an idyllic escape from bustling New Buswang. A 1 km trail built on elevated wooden pathways creates a serene adventure into the heart of this eco-park, crossing coursing rivers and navigating thick tufts of trees. Kayaking, rafting and snacks of woodworms (if you’re brave enough!) are all on offer.
+
+- title: Kawa Hot Bath
+  class: kawa-hot-bath
+  location: Tibiao
+  guide-class: panay
+  guide-section-class: panay
+  content: Relax in a cauldron of pot pourri heated by a roaring fire underneath. Yes, it sounds very much like you’ll be cooked for that evening’s meal, but in reality it’s a wholly relaxing experience in isolated rural splendour.
+
+- title: Igbaclag Cave and the Stone Castle
+  class: igbaclag-cave-and-the-stone-castle
+  location: Antique
+  guide-class: panay
+  guide-section-class: panay
+  content: Explore this mysterious cave network and lose yourself in Panay’s dramatic scenery. Igbaclag Cave has two openings, offering truly intrepid exploration, as some passages have yet to be explored by anyone! Head up to the ‘Stone Castle’, a natural balcony, that hosts resplendent views over the tropical countryside.
+
+- title: Dinagyang Festival
+  class: dinagyang-festival
+  location: Iloilo
+  guide-class: panay
+  guide-section-class: panay
+  content: Held on the fourth Sunday of January, this colourful, vibrant festival honours Santo Nino and showcases the unique heritage and frenzied passion of the Ilonggo people. Vast displays channel pre-colonial heritage in fantastic vibrancy – this truly is an unmissable experience if you’re planning a trip to beat those winter blues.
+
+- title: Miag-ao Church
+  class: miag-ao-church
+  location: Iloilo
+  guide-class: panay
+  guide-section-class: panay
+  content: A relic of Spanish occupation, this stunning Baroque Roman-Catholic church is a wonder of colonial heritage. A UNESCO heritage site, Miag-ao is best known for its eclectic, magnificent facade. Portraying St Christopher carrying Christ, the sculpture has undergone a process of indigenisation offering coconut, papaya and guava shrubs. A remarkable story of clashing cultures.
+
+- title: Jawili Falls
+  class: jawili-falls
+  location: Panay
+  guide-class: panay
+  guide-section-class: panay
+  content: An effortlessly picturesque beauty spot perfect for whiling away an afternoon in cool waters. Tucked into tropical surrounds, dip into the cool pools at the top of the waterfall or relax in the main pool as the waters tumble above your head.
+
+- title: Guimaras Island
+  class: guimaras-island
+  location: Guimaras Island
+  guide-class: panay
+  guide-section-class: panay
+  content: Take a boat trip out to Guimaras Island and explore a laid-back oasis with great views over Iloilo City, a Trappist Monastery and some of the best mangos in southeast Asia – so much so there’s a bar dedicated to mango only products – mango pizza anyone? Head to Alubihod Beach for true serenity...
+
+- title: Turtle Island
+  class: turtle-island
+  location: Turtle Island
+  guide-class: panay
+  guide-section-class: panay
+  content: Head out to Turtle Island for, you guessed it, our little shell-back friends! This little island sanctuary offers a close glimpse at these marvellous creatures. Take a boat, pay the small fee which goes towards upkeep of the sanctuary and meet the shelled chums.
 
 - title: Boracay
-  class: highlight-1
-  location: Location
-  content: >
-    <p class="p--lead">White Beach & Mount Luho views</p>
+  class: boracay
+  location:
+  guide-class: panay
+  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+## CEBU
+
+- title: Lechon
+  class: lechon
+  location:
+  guide-class: panay
+  guide-section-class: cebu
+  content: Cebu is famed for a lasting reminder of Spanish influence – Lechon. The classic roast pig is found everywhere on the island, but locals contend for their favourite joints. From stalwarts like Rico’s and Alejo’s, revel in the fatty, salty, porky goodness.
+
+- title: Cebu Taoist Temple
+  class: cebu-taoist-temple
+  location: Cebu City
+  guide-class: panay
+  guide-section-class: cebu
+  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+- title: Aguinid Waterfalls
+  class: aguinid-waterfalls
+  location: Samboan
+  guide-class: panay
+  guide-section-class: cebu
+  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+- title: Oslob
+  class: oslob
+  location: Cebu
+  guide-class: panay
+  guide-section-class: cebu
+  content: Swim with the whale sharks. Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+## BOHOL
+
+## NEGROS
+
+- title: Dumaguette
+  class: dumaguette
+  location: Negros Oriental
+  guide-class: panay
+  guide-section-class: negros
+  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+
+
+##  =========================
+##  PALAWAN : palawan
+##  Sections :
+##  =========================
+
+- title: Calauit Safari
+  class: calauit-safari
+  location: Palawan
+  guide-class: palawan
+  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+
+##  =========================
+##  OTHER HIGHLIGHTS
+##  =========================
+
+- title: Batanes
+  class: batanes
+  content: These isolated islands are a perfect antidote to city life. As the northernmost islands in the country, you’ll find a sparse and curious collection of coffee huts, souvenir shops and restaurants. A tiny population facilitates this, but the main draw is the nature – untouched, pristine and luscious scenes await.
 
 - title: Chocolate Hills
-  class: highlight-2
-  location: Location
-  content: >
-    <p class="p--lead">Zip-line, river, backpacking and nature</p>
-
-- title: Taal Volcano
-  class: highlight-3
-  location: Location
-  content: >
-    <p class="p--lead">Volcano, lake, hiking, protected area and mountain</p>
+  class: chocolate-hills
+  location: Bohol
+  content: A marvellous natural oddity, the chocolate-drop hills ripple and roll over the valley. An iconic Filipino treat, they are best explored with a quad bike, which will allow you to cover plenty ground and unpick tiny villages that dot the valley.
 
 - title: Banaue Rice Terraces
-  class: highlight-3
-  location: Location
-  content: >
-    <p class="p--lead">Hiking</p>
+  class: banaue-rice-terraces
+  location: Bohol
+  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
-
-##  =========================
-##  GUIDE 1
-##  =========================
-
-- title: G1S1 H1
-  class: highlight-1
-  guide-class: guide-1
-  guide-section-class: guide-section-1
-  location: Location
-  content: >
-    <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-    <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-
-- title: G1S1 H2
-  class: highlight-1
-  guide-class: guide-1
-  guide-section-class: guide-section-1
-  location: Location
-  content: >
-    <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-    <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-
-- title: G1S2 H1
-  class: highlight-2
-  guide-class: guide-1
-  guide-section-class: guide-section-2
-  location: Location
-  content: >
-    <p class="p--lead">Curabitur blandit tempus porttitor.</p>
-    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-
-- title: G1S3 H1
-  class: highlight-2
-  guide-class: guide-1
-  guide-section-class: guide-section-3
-  location: Location
-  content: >
-    <p class="p--lead">Curabitur blandit tempus porttitor.</p>
-    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-
-
-
-##  =========================
-##  GUIDE 2
-##  =========================
-
-- title: G2S1 H1
-  class: highlight-1
-  guide-class: guide-2
-  guide-section-class: guide-section-1
-  location: Location
-  content: >
-    <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-    <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-
-- title: G2S2 H1
-  class: highlight-1
-  guide-class: guide-2
-  guide-section-class: guide-section-2
-  location: Location
-  content: >
-    <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-    <p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-
-- title: G2S2 H2
-  class: highlight-2
-  guide-class: guide-2
-  guide-section-class: guide-section-2
-  location: Location
-  content: >
-    <p class="p--lead">Curabitur blandit tempus porttitor.</p>
-    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-
-- title: G2S3 H1
-  class: highlight-2
-  guide-class: guide-2
-  guide-section-class: guide-section-3
-  location: Location
-  content: >
-    <p class="p--lead">Curabitur blandit tempus porttitor.</p>
-    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>

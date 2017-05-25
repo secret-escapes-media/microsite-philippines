@@ -2,7 +2,7 @@
 
   <a id="card-link-{{ offer.title | slugify }}" class="offer__link" href="{{ offer.link }}"><span class="btn btn--se btn--solid">View Offer</span></a>
 
-  <div class="bg-image--ratio bg-image--ratio-3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{% if offer.class %}{{ offer.class }}{% else %}{{ offer.title | slugify }}{% endif %}.jpg')">
+  <div class="offer__image bg-image--ratio bg-image--ratio-3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{% if offer.class %}{{ offer.class }}{% else %}{{ offer.title | slugify }}{% endif %}.jpg')">
   </div>
 
   <div class="offer__content">

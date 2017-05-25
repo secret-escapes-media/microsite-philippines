@@ -5,7 +5,7 @@
 .bg-image {
 
   // Size div to aspect ratio with background image attributes
-  &--ratio-1-1, &--ratio-4-3, &--ratio-3-2, &--ratio-16-9, &--ratio-21-9, &--ratio-5-2 {
+  &--ratio-3-4, &--ratio-1-1, &--ratio-4-3, &--ratio-3-2, &--ratio-16-9, &--ratio-21-9, &--ratio-5-2 {
     display: block;
     position: relative;
     @include background-attributes();
@@ -16,6 +16,7 @@
     }
   }
 
+  &--ratio-3-4:before   { padding-top: 133.3333333%; }
   &--ratio-1-1:before   { padding-top: 100%; }
   &--ratio-4-3:before   { padding-top: 75%; }
   &--ratio-3-2:before   { padding-top: 66.666666666667%; }
@@ -25,6 +26,7 @@
 
   @include min-bp(small) {
     &--small {
+      &--ratio-3-4:before   { padding-top: 133.3333333%; }
       &--ratio-1-1:before   { padding-top: 100%; }
       &--ratio-4-3:before   { padding-top: 75%; }
       &--ratio-3-2:before   { padding-top: 66.666666666667%; }
@@ -35,6 +37,7 @@
   }
   @include min-bp(medium) {
     &--medium {
+      &--ratio-3-4:before   { padding-top: 133.3333333%; }
       &--ratio-1-1:before   { padding-top: 100%; }
       &--ratio-4-3:before   { padding-top: 75%; }
       &--ratio-3-2:before   { padding-top: 66.666666666667%; }
@@ -45,6 +48,7 @@
   }
   @include min-bp(large) {
     &--large {
+      &--ratio-3-4:before   { padding-top: 133.3333333%; }
       &--ratio-1-1:before   { padding-top: 100%; }
       &--ratio-4-3:before   { padding-top: 75%; }
       &--ratio-3-2:before   { padding-top: 66.666666666667%; }
@@ -55,6 +59,7 @@
   }
   @include min-bp(xlarge) {
     &--xlarge {
+      &--ratio-3-4:before   { padding-top: 133.3333333%; }
       &--ratio-1-1:before   { padding-top: 100%; }
       &--ratio-4-3:before   { padding-top: 75%; }
       &--ratio-3-2:before   { padding-top: 66.666666666667%; }
@@ -65,6 +70,7 @@
   }
   @include min-bp(xxlarge) {
     &--xxlarge {
+      &--ratio-3-4:before   { padding-top: 133.3333333%; }
       &--ratio-1-1:before   { padding-top: 100%; }
       &--ratio-4-3:before   { padding-top: 75%; }
       &--ratio-3-2:before   { padding-top: 66.666666666667%; }

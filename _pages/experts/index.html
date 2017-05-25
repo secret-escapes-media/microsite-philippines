@@ -5,19 +5,61 @@ title: Experts
 class: experts
 nav-order: 3
 
-banner-title: Meet the Experts
+banner-title: Experts
+banner-subtitle: Meet the local experts
 
 intro: >
   <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
 ---
 
 
 
-<section class="section__intro align-center">
-  <div class="row row--padding">
-    {{ page.intro }}
+
+
+<section class="section--padding-large">
+
+  {% for expert in site.data.experts %}
+  <div class="row row--columns-6-6 expert" id="expert-{{expert.class}}">
+
+    <div class="expert__summary">
+
+      <div class="row__column expert__summary-content">
+        <h2 class="title title--small title--display">{{ expert.title }}</h2>
+        <hr class="hr--margin" />
+        {{ expert.content }}
+      </div>
+
+      <div class="row__column expert__summary-image bg-image bg-image--ratio bg-image--ratio-4-3" style="background-image: url('{{ site.baseurl }}/img/content/experts/{{ expert.class }}.jpg');">
+        <div class="expert__summary-image-profile bg-image--shadow bg-image--border bg-image bg-image--ratio bg-image--ratio-1-1" style="background-image: url('{{ site.baseurl }}/img/content/experts/{{ expert.class }}-profile.jpg');"></div>
+      </div>
+
+    </div>
+
+    <div class="fold-container" id="expert-{{expert.class}}-interview">
+      <a href="#expert-{{expert.class}}" class="btn btn--solid fold__btn" data-target="expert-{{expert.class}}-interview" data-label="Read interview" data-alt-label="Hide interview">Read interview</a>
+
+      <div class="row row--columns-6-6-gutters fold expert__interview bg--pattern">
+        <div class="row__column">
+        {% for question in expert.questions %}
+          {% assign half = forloop.length | divided_by:2.0 | ceil %}
+          <h3 class="title title--micro title--bolder title--extra-margin">{{question.question}}</h3>
+          <p>{{question.answer}}</p>
+          {% if forloop.index == half %}
+          </div>
+          <div class="row__column">
+          {% endif %}
+        {% endfor %}
+        </div>
+      </div>
+
+    </div>
+
   </div>
+
+  {% endfor %}
+
 </section>
 
 

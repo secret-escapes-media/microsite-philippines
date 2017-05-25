@@ -1,7 +1,5 @@
 
-##  =========================
-##  PAMPERING OFFERS
-##  =========================
+
 
   - title: An offer
     category: pampering
@@ -33,3 +31,62 @@
     expires: 2016-03-23
     link: #
 
+  - title: An offer
+    category: pampering
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 10
+    expires: 2016-03-23
+    link: #
+
+  - title: An offer
+    category: pampering
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 20
+    expires: 2016-03-23
+    link: #
+
+  - title: An offer
+    category: pampering
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 20
+    expires: 2016-03-23
+    link: #
+
+  - title: An offer
+    category: pampering
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 10
+    expires: 2016-03-23
+    link: #
+
+  - title: An offer
+    category: pampering
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 20
+    expires: 2016-03-23
+    link: #
+
+  - title: An offer
+    category: pampering
+    location: Region, Country
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+    price: 999999
+    price-description: per room per night
+    saved: 20
+    expires: 2016-03-23
+    link: #

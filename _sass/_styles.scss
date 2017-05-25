@@ -32,7 +32,7 @@ body {
   }
   p { margin-top: .5em; }
   .logo--secret-escapes { max-width: 110px; }
-  .logo--partner { max-width: 69px; }
+  .logo--partner { max-width: 100px; }
 }
 
 // ---------- Section styles ----------
@@ -46,6 +46,7 @@ body {
   &--white      { background-color: $white; }
   &--black      { background-color: $black; }
   &--light-grey { background-color: $light-grey; }
+  &--grey { background-color: $grey; }
   &--dark-grey  { background-color: $dark-grey; }
   &--text-black     { background-color: $text-black; }
   &--text-heading   { background-color: $text-heading; }
@@ -55,6 +56,18 @@ body {
   &--se-dark-grey  { background-color: $se-dark-grey; }
   &--theme-primary   { background-color: $partner-primary; }
   &--theme-secondary { background-color: $partner-secondary; }
+  &--theme-tertiary { background-color: $partner-tertiary; }
+  &--theme-fourth { background-color: $partner-fourth; }
+
+  &--pattern { background-image: url('../img/bg/bg-pattern.png'); }
+
+  &--waves { background-image: url('../img/bg/wave-white50.png'); background-attachment: fixed; }
+  &--waves-10 { background-image: url('../img/bg/wave-white10.png'); background-attachment: fixed; }
+  &--waves-dark { background-image: url('../img/bg/wave-black30.png'); background-attachment: fixed; }
+  &--waves-dark-05 { background-image: url('../img/bg/wave-black05.png'); background-attachment: fixed; }
+
+  &--image {}
+  &--image-fixed { background-size: cover; background-attachment: fixed; background-repeat: no-repeat; }
 }
 
 
@@ -63,33 +76,38 @@ body {
 .btn {
   @include transition;
   display:inline-block;
-  padding: .5em 3em;
-  border-radius: 5px;
-  border: 2px solid $partner-primary;
-  color: $partner-primary;
-  font-family: $title-font-family;
+  padding: .5em 3em .45em;
+  border-radius: 3px;
+  border: 2px solid rgba($partner-secondary, 0.2);
+  color: $partner-secondary;
+  font-family: $main-font-family;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 0.9em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   &:hover {
     color: white;
-    background-color: darken($partner-primary, 10);
+    background-color: $partner-secondary;
     text-decoration: none;
   }
   * + & { margin-top: 1.5em; }
 
-  &--small { font-size: 0.8em; padding: .3em 2em; }
-  &--large { font-size: 1.2em; padding: .6em 3em; }
 
-  &--solid { color: white; border: 0; background-color: $partner-primary; }
+  &--solid {
+    padding: .5em 3em .4em;
+    box-shadow: 2px 2px 2px 0 rgba(black,0.2);
+    color: white; border: 0; background-color: $partner-primary;
+    &:hover { background-color: darken($partner-primary, 10) }
+  }
   &--primary { background-color: $partner-primary; }
 
   &--secondary { background-color: $partner-secondary; }
   &--secondary:hover { background-color: darken($partner-secondary, 10); }
 
   &--invert {
-    color: $partner-primary; border: 0; background-color: $white;
+    color: $white; border-color: $white;
+    &:hover { background-color: $white; color: $partner-secondary; }
+    &.btn--solid { color: $partner-secondary; border: 0; background-color: $white; }
     &.btn--primary { color: $partner-primary; }
     &.btn--secondary { color: $partner-secondary; }
     &.btn--secondary:hover { background-color: darken($partner-secondary, 10); color: $white; }
@@ -100,56 +118,124 @@ body {
     &:hover { background-color: darken($se-orange, 10); }
     &.btn--invert { color: $se-orange; background-color: $white; }
   }
+
+
+  &--small { font-size: 0.8em; padding: .3em 2em; }
+  &--large { padding: .8em 3em; }
 }
 
 
-// ---------- card ----------
+// ---------- Page intro sections ----------
 
-.card {
-  display: block;
-  border-radius: 5px;
+
+.intro {
+  &-experts {
+    padding-bottom: 8em;
+    margin-bottom: -8em;
+    background-color: $partner-primary;
+    background-image: url('../img/bg/wave-white10.png');
+    color: $white;
+  }
+  &-offers {
+    padding-bottom: 8em;
+    margin-bottom: -8em;
+    background-color: $partner-secondary;
+    background-image: url('../img/bg/wave-white10.png');
+    color: $white;
+  }
+  &-guide {
+    background-color: $partner-tertiary;
+    background-image: url('../img/bg/wave-white10.png');
+    color: $white;
+  }
+}
+
+
+/* ===============================================
+ *     JAVASCRIPT SECTIONS
+ * =============================================== */
+
+// -- Highlight slider :: show/hide extra highlights ---
+
+.highlights {
   overflow: hidden;
-  background-color: $white;
-  border: 1px solid $light-grey;
-  &:not(:last-child){
-    margin-bottom: 2em;
-  }
-
-  &__image { }
-  &__title {
-    padding: 1em 1.5em;
-    border-bottom: 1px solid $light-grey;
-    .card--small & { padding: 1em; }
-  }
-  &__content {
-    padding: 1em 1.5em;
-    .card--small & { padding: 1em; }
-  }
-
-  &__location {
-    margin-left: 1.5em;
-    text-indent: -1.5em;
-    font-size: 0.85em;
-    line-height: 1.5;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 600;
-    .card--small & { margin-top: 0.25em; }
-    &:before {
+  position: relative;
+  padding-top: $margin/2;
+  &--hide {
+    margin-bottom: -20px;
+    height: 240px;
+    &:after {
       content: "";
-      display: inline-block;
-      height: 1.1em;
-      width: 1em;
-      margin-right: .5em;
-      margin-bottom: .2em;
-      vertical-align: middle;
-      background-image: url( "../img/icons/map-pin.png" );
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-size: contain;
-      .svg & { background-image: url( "../img/icons/map-pin.svg" ); }
+      position: absolute;
+      z-index: 1;
+      bottom: 0; left: 0; right: 0;
+      height: 60px;
+      background-image: url('../img/icons/highlights-fade.png');
+      background-position: bottom;
+      background-repeat: repeat-x;
     }
+    .bg--light-grey &:after { background-image: url('../img/icons/highlights-fade-light-grey.png'); }
+  }
+  &__btn { position: relative; z-index: 10; }
+}
+
+// ---------- folding sections ----------
+
+.fold {
+  &-container { position: relative; padding: 2px 0; }
+  &__btn {
+    position: absolute;
+    z-index: 10;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
+
+/* ===============================================
+ *     EXPLORE PAGE
+ * =============================================== */
+
+.guides__row .guide {
+  margin-bottom: $margin;
+  @include bp(xxlarge){
+    @include gallery($gutters 4);
+  }
+}
+
+
+
+
+/* ===============================================
+ *     EXPERTS PAGE
+ * =============================================== */
+
+.expert {
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+  border-radius: 3px;
+  background-color: $light-grey;
+  &:not(:last-child) { margin-bottom: $margin*2; }
+
+  &__summary {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    &-image {
+      &-profile {
+        box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+        position: absolute !important;
+        left: -1em; top: -1em;
+        width: 140px;
+      }
+      border-radius: 0 3px 3px 0;
+    }
+    &-content { padding: $margin; }
+  }
+
+
+  &__interview {
+    padding: $margin;
+  }
+}

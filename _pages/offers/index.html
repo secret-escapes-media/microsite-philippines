@@ -5,7 +5,8 @@ title: Offers
 class: offers
 nav-order: 4
 
-banner-title: Philippines Offers
+banner-supertitle: The very best
+banner-title: Philippines offers
 
 intro: >
   <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -14,15 +15,7 @@ intro: >
 
 
 
-<section class="section__intro align-center">
-  <div class="row row--padding">
-    {{ page.intro }}
-  </div>
-</section>
-
-
-
-<section class="section bg--white">
+<section class="section">
   <div class="row row--padding">
     {% assign offers = site.data.offers | sort: 'saved' | reverse %}
     {% for offer in offers %}
@@ -30,3 +23,7 @@ intro: >
     {% endfor %}
   </div>
 </section>
+
+
+
+{% include offer-promo.html %}

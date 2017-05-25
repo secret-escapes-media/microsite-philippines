@@ -1,0 +1,55 @@
+.card {
+  display: block;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: $white;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.2);
+  &:not(:last-child){
+    margin-bottom: 2em;
+  }
+
+  &__image { }
+  &__title {
+    padding: 1em 1.5em;
+    border-bottom: 1px solid $light-grey;
+    .card--small & { padding: 1em; }
+  }
+  &__content {
+    padding: 1em 1.5em;
+    .card--small & { padding: 1em; }
+  }
+
+  &__location {
+    font-size: 0.85em;
+    line-height: 1.5;
+    text-indent: -0.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    .card--small & { margin-top: 0.25em; }
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1.1em;
+      width: 1em;
+      margin-right: .5em;
+      margin-bottom: .2em;
+      vertical-align: middle;
+      background-image: url( "../img/icons/map-pin.png" );
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-size: contain;
+      .svg & { background-image: url( "../img/icons/map-pin.svg" ); }
+    }
+  }
+
+  // SMALL VARIANT
+  &--small {
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    .card__image { width: 33.333%; float: left; margin-right: 1em; }
+    .card__content { text-align: left; }
+  }
+}

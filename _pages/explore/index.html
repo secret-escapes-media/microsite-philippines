@@ -5,7 +5,8 @@ title: Explore
 class: explore
 nav-order: 2
 
-banner-title: Explore the Philippines
+banner-title: Explore
+banner-subtitle: The Philippines
 
 intro: >
   <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -14,22 +15,20 @@ intro: >
 
 
 
-<section class="section__intro align-center">
-  <div class="row row--padding">
-    {{ page.intro }}
-  </div>
-</section>
+
+{% include travel-details.html %}
+
 
 
 
 <section class="bg--white">
 
   <div class="row row--padding align-center">
-    <h2 class="title title--medium title--upper title--expanded">Guides</h2>
+    <h2 class="title title--medium title--upper title--expanded title--display">Guides</h2>
     <p class="p--lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla.</p>
   </div>
 
-  <div class="row row--padding row--columns-6-6-gutters">
+  <div class="row row--padding guides__row">
     {% assign guides = site.html_pages | where: 'layout', 'guide' %}
     {% for guide in guides %}
       {% include guide.html %}
@@ -43,7 +42,7 @@ intro: >
 <section>
 
   <div class="row row--padding align-center">
-    <h2 class="title title--medium title--upper title--expanded">Highlights</h2>
+    <h2 class="title title--medium title--upper title--expanded title--display">Highlights</h2>
     <p class="p--lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla.</p>
   </div>
 
@@ -51,13 +50,16 @@ intro: >
 
     {% assign highlights = site.data.highlights %}
     {% for highlight in highlights %}
-      {% include highlight.html %}
+      {% if forloop.index == 1 or forloop.index == 2 or forloop.index == 3 %}
+        {% include highlight.html %}
+      {% else %}
+        {% include highlight.html class="small" %}
+      {% endif %}
     {% endfor %}
 
   </div>
 
 </section>
-
 
 
 
@@ -71,11 +73,11 @@ intro: >
 
         <div class="row__column">
           <div class="js-close-modal modal__close"></div>
-          <div class="bg-image bg-image--ratio-16-9 bg-image--large--ratio-3-2" style="background-image: url('{{ site.baseurl }}/img/content/highlight-{{ highlight.class }}.jpg');"></div>
+          <div class="bg-image bg-image--ratio-16-9 bg-image--large--ratio-3-2" style="background-image: url('{{ site.baseurl }}/img/content/highlights/{{ highlight.class }}.jpg');"></div>
         </div>
 
         <div class="row__column modal__item__content">
-          <h2 class="title title--small title--expanded title--upper">{{ highlight.title }}</h2>
+          <h2 class="title title--small title--expanded title--upper title--display">{{ highlight.title }}</h2>
           <p class="card__location">{{ highlight.location }}</p>
           <hr />
           <p>{{ highlight.content }}</p>

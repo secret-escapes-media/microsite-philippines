@@ -31,10 +31,22 @@
       padding-top: 0;
       transform: translateY(-50%);
     }
+    &:after {
+      content: "";
+      pointer-events: none;
+      height: 272px; width: 436px;
+      position: absolute; z-index: -1;
+      top: 50%; margin-top: -136px;
+      left: 50%; margin-left: -218px;
+      background-image: url('../img/bg/title-banner--pattern.png');
+      background-position: center; background-size: contain; background-repeat: no-repeat;
+    }
   }
 
   &__title {
-    margin-top: 30px;
+    margin-top: 15px;
+    font-family: $display-font-family;
+    line-height: 1.5;
   }
 
   &__overlay {
