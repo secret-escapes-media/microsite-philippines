@@ -4,14 +4,20 @@
 ##  Sections :
 ##  =========================
 
-- title: Taal Volcano Hike
-  class: taal-volcano-hike
+- title: Hanging Coffins of Sagada
+  class: hanging-coffins-of-sagada
   location: Manila
   guide-class: luzon
   content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
 - title: Nagcarlan Underground Cemetery
   class: nagcarlan-underground-cemetery
+  location: Manila
+  guide-class: luzon
+  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+- title: Abandoned Theme Park
+  class: abandoned-theme-park
   location: Manila
   guide-class: luzon
   content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -24,105 +30,182 @@
 - title: Bakhawan Eco-Park
   class: bakhawan-eco-park
   location: Bakhawan
-  guide-class: panay
+  guide-class: visayas
   guide-section-class: panay
   content: 220 hectares of sprawling mangroves offer an idyllic escape from bustling New Buswang. A 1 km trail built on elevated wooden pathways creates a serene adventure into the heart of this eco-park, crossing coursing rivers and navigating thick tufts of trees. Kayaking, rafting and snacks of woodworms (if you’re brave enough!) are all on offer.
 
 - title: Kawa Hot Bath
   class: kawa-hot-bath
   location: Tibiao
-  guide-class: panay
+  guide-class: visayas
   guide-section-class: panay
   content: Relax in a cauldron of pot pourri heated by a roaring fire underneath. Yes, it sounds very much like you’ll be cooked for that evening’s meal, but in reality it’s a wholly relaxing experience in isolated rural splendour.
 
 - title: Igbaclag Cave and the Stone Castle
   class: igbaclag-cave-and-the-stone-castle
   location: Antique
-  guide-class: panay
+  guide-class: visayas
   guide-section-class: panay
   content: Explore this mysterious cave network and lose yourself in Panay’s dramatic scenery. Igbaclag Cave has two openings, offering truly intrepid exploration, as some passages have yet to be explored by anyone! Head up to the ‘Stone Castle’, a natural balcony, that hosts resplendent views over the tropical countryside.
 
 - title: Dinagyang Festival
   class: dinagyang-festival
   location: Iloilo
-  guide-class: panay
+  guide-class: visayas
   guide-section-class: panay
   content: Held on the fourth Sunday of January, this colourful, vibrant festival honours Santo Nino and showcases the unique heritage and frenzied passion of the Ilonggo people. Vast displays channel pre-colonial heritage in fantastic vibrancy – this truly is an unmissable experience if you’re planning a trip to beat those winter blues.
 
 - title: Miag-ao Church
   class: miag-ao-church
   location: Iloilo
-  guide-class: panay
+  guide-class: visayas
   guide-section-class: panay
   content: A relic of Spanish occupation, this stunning Baroque Roman-Catholic church is a wonder of colonial heritage. A UNESCO heritage site, Miag-ao is best known for its eclectic, magnificent facade. Portraying St Christopher carrying Christ, the sculpture has undergone a process of indigenisation offering coconut, papaya and guava shrubs. A remarkable story of clashing cultures.
 
 - title: Jawili Falls
   class: jawili-falls
   location: Panay
-  guide-class: panay
+  guide-class: visayas
   guide-section-class: panay
   content: An effortlessly picturesque beauty spot perfect for whiling away an afternoon in cool waters. Tucked into tropical surrounds, dip into the cool pools at the top of the waterfall or relax in the main pool as the waters tumble above your head.
 
 - title: Guimaras Island
   class: guimaras-island
   location: Guimaras Island
-  guide-class: panay
+  guide-class: visayas
   guide-section-class: panay
   content: Take a boat trip out to Guimaras Island and explore a laid-back oasis with great views over Iloilo City, a Trappist Monastery and some of the best mangos in southeast Asia – so much so there’s a bar dedicated to mango only products – mango pizza anyone? Head to Alubihod Beach for true serenity...
 
 - title: Turtle Island
   class: turtle-island
   location: Turtle Island
-  guide-class: panay
+  guide-class: visayas
   guide-section-class: panay
   content: Head out to Turtle Island for, you guessed it, our little shell-back friends! This little island sanctuary offers a close glimpse at these marvellous creatures. Take a boat, pay the small fee which goes towards upkeep of the sanctuary and meet the shelled chums.
 
 - title: Boracay
   class: boracay
-  location:
-  guide-class: panay
-  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  location: Boracay Island
+  guide-class: visayas
+  content: This tiny spit of land above Panay has been a much-hyped island paradise, having come second in the draw of best island paradise in the world by Travel + Leisure readers, losing out to Palawan. That’s right, top two were both in the Philippines! The 4km stretch of White Beach is a dreamy idyll that constitutes the finest elements of the country – shallow turquoise waters, powder-white sands, banca boats gliding across the calm seas and endless shady palm trees. There’s a reason it’s such a massive tourist draw – astounding beauty lies at every glance.
 
 ## CEBU
 
 - title: Lechon
   class: lechon
   location:
-  guide-class: panay
+  guide-class: visayas
   guide-section-class: cebu
   content: Cebu is famed for a lasting reminder of Spanish influence – Lechon. The classic roast pig is found everywhere on the island, but locals contend for their favourite joints. From stalwarts like Rico’s and Alejo’s, revel in the fatty, salty, porky goodness.
 
-- title: Cebu Taoist Temple
-  class: cebu-taoist-temple
-  location: Cebu City
-  guide-class: panay
+- title: Basilica Minore del Santo Niño
+  class: basilica-minore-del-santo-nino
+  location: Cebu
+  guide-class: visayas
   guide-section-class: cebu
-  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  content: This grand church houses a Flemish statue of Jesus, revered by the people of Cebu, and purportedly dating to the time Magellan. The site was home to the oldest church in the Philippines, until that needed rebuilding in the 18th century. It has persistently been a victim of natural disasters, only adding to its mystique. The interior features splendid decoration.
+
+- title: Larsian Barbecue
+  class: larsian-barbecue
+  location: Cebu City
+  guide-class: visayas
+  guide-section-class: cebu
+  content: Tuck in at this great street food stop in Cebu City, where rows of stallholders offer barbecued meats to the delight of locals. You’ll find Cebu’s famous Lechon as well as a host of other chargrilled treats – a must for flavour-packed evenings and great atmosphere.
+
+- title: Taoist Temple
+  class: taoist-temple
+  location: Cebu City
+  guide-class: visayas
+  guide-section-class: cebu
+  content: On the fringes of the city sits this impressive place of Taoist worship. Climb the many steps and use the time to carefully consider your motives. You’ll have the chance to practice either a wishing ritual or a fortune reading ritual whilst exploring the bright Chinese architecture that makes this spiritual place so magnetic. Be sure to observe the dress code.
 
 - title: Aguinid Waterfalls
   class: aguinid-waterfalls
   location: Samboan
-  guide-class: panay
+  guide-class: visayas
   guide-section-class: cebu
-  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  content: A river winds through tropical jungle, creating an endless series of small waterfalls that provide refreshing hikes in the shallow waters. The larger falls have cutouts to help visitors climb, meaning you can trace the river through the jungle whilst navigating spellbinding natural formations.
 
-- title: Oslob
-  class: oslob
+- title: Whale Sharks in Oslob
+  class: whale-sharks-in-oslob
   location: Cebu
-  guide-class: panay
+  guide-class: visayas
   guide-section-class: cebu
-  content: Swim with the whale sharks. Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  content: This small bay has drawn majestic whale sharks offering an intrepid glance at these magnificent creatures. Many operators offer the chance to swim with the sharks – they are, after all, pretty harmless – however there is growing pressure to regulate this more heavily, as the industry is potentially having a detrimental effect on the population. Inform yourself and consider your options first.
+
+- title: Canyoneering in Kawasan Falls
+  class: canyoneering-in-kawasan-falls
+  location: Cebu
+  guide-class: visayas
+  guide-section-class: cebu
+  content: This small bay has drawn majestic whale sharks offering an intrepid glance at these magnificent creatures. Many operators offer the chance to swim with the sharks – they are, after all, pretty harmless – however there is growing pressure to regulate this more heavily, as the industry is potentially having a detrimental effect on the population. Inform yourself and consider your options first.
 
 ## BOHOL
 
+- title: Chocolate Hills
+  class: chocolate-hills
+  location: Bohol
+  guide-class: visayas
+  guide-section-class: bohol
+  content: A marvellous natural oddity, the chocolate-drop hills ripple and roll over the valley. An iconic Filipino treat, they are best explored with a quad bike, which will allow you to cover plenty ground and unpick tiny villages that dot the valley.
+
+- title: Philippine Tarsier Sanctuary
+  class: philippine-tarsier-sanctuary
+  location: Bohol
+  guide-class: visayas
+  guide-section-class: bohol
+  content: Not to be confused with the Loboc sanctuary, which has come under criticism for unethical treatment of this endangered species, this Tarsier sanctuary in Canapnapan will steal your heart with fleeting glimpses at these wide-eyed wonders.
+
+- title: Alona Beach
+  class: alona-beach
+  location: Bohol
+  guide-class: visayas
+  guide-section-class: bohol
+  content: This marvellous beach on Panglao Island, just a short hop from Bohol, is in no uncertain terms a paradise of white sand, clear waters and shady palm trees. Whether it’s endless sunbathing or warm dips in balmy waters, head over for your very own beach idyll.
+
+- title: Loboc River Cruise
+  class: loboc-river-cruise
+  location: Bohol
+  guide-class: visayas
+  guide-section-class: bohol
+  content: Cruise along this picturesque river, lined by tropical forests. The quaint river boats tend to offer buffets packed with Filipino treats, making for blissful cruising in beautiful surroundings. Look out for rural like on the river banks, offering timewarp glimpses into traditional Filipino living.
+
+- title: Kayak Firefly Tour
+  class: kayak-firefly-tour
+  location: Bohol
+  guide-class: visayas
+  guide-section-class: bohol
+  content: Cast off into serene waters as the sun sets, invigorating your surroundings in a vivid display of colour. As you paddle through this pristine mangrove river and the light slowly bleeds away, a faint glimmer gives way to a cloud of luminescence as the fireflies dance above your head. An effortlessly romantic scene that should not be missed!
+
 ## NEGROS
 
-- title: Dumaguette
-  class: dumaguette
+- title: Dumaguete
+  class: dumaguete
   location: Negros Oriental
-  guide-class: panay
+  guide-class: visayas
   guide-section-class: negros
-  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  content: This student town offers a buzzing, cosmopolitan vibe centred around an electric harbourfront packed with raucous bars and great restaurants. Far from the more provincial centres of Bacolod, Dumaguete is a forward-looking, upbeat and downright exciting place to hang out.
+
+- title: Manokan Country
+  class: manokan-country
+  location: Negros
+  guide-class: visayas
+  guide-section-class: negros
+  content: This famed hawker centre delights locals with big Filipino bites in the heart of Bacolod City. Try Negro’s famous Chicken Inasal as well as plenty other barbecue treats, as you pull up a plastic chair amongst the bustling foodie stalls. Join office workers, families and students at the is cheap, delicious pit-stop.
+
+- title: The Ruins
+  class: the-ruins
+  location: Negros Oriental
+  guide-class: visayas
+  guide-section-class: negros
+  content: This enchanting place is the former home of sugar baron Don Mariano Ledesma Lacson, with Italianate stylings romantically juxtaposed against the tropical surroundings. The mansion was burnt down during the second world war to stop it becoming headquarters for the Japanese. Walk the moody gardens with the looming ruinous grandeur of the mansion dominating the space.
+
+- title: Danjugan Island
+  class: danjugan-island
+  location: Negros Oriental
+  guide-class: visayas
+  guide-section-class: negros
+  content: A remote island just off the coast of Negros, Danjugan was bought outright in the 90s to preserve its ecology, meaning unspoilt Filipino paradise awaits. From prime snorkelling and diving spots to spotting black tip sharks, turtles, and kayaking in the various lagoons, Danjugan is a sublime idyll for wearied travellers.
 
 
 
@@ -131,28 +214,32 @@
 ##  Sections :
 ##  =========================
 
-- title: Calauit Safari
-  class: calauit-safari
-  location: Palawan
-  guide-class: palawan
-  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
 
 ##  =========================
 ##  OTHER HIGHLIGHTS
 ##  =========================
 
+- title: Taal Volcano Hike
+  class: taal-volcano-hike
+  location:
+  guide-class:
+  content:
+
 - title: Batanes
   class: batanes
+  location:
+  guide-class:
   content: These isolated islands are a perfect antidote to city life. As the northernmost islands in the country, you’ll find a sparse and curious collection of coffee huts, souvenir shops and restaurants. A tiny population facilitates this, but the main draw is the nature – untouched, pristine and luscious scenes await.
 
-- title: Chocolate Hills
-  class: chocolate-hills
-  location: Bohol
-  content: A marvellous natural oddity, the chocolate-drop hills ripple and roll over the valley. An iconic Filipino treat, they are best explored with a quad bike, which will allow you to cover plenty ground and unpick tiny villages that dot the valley.
+- title: Calauit Safari
+  class: calauit-safari
+  location:
+  guide-class:
+  content:
 
 - title: Banaue Rice Terraces
   class: banaue-rice-terraces
-  location: Bohol
-  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
+  location:
+  guide-class:
+  content:

@@ -255,5 +255,70 @@ $('.fold__btn').click(function(){
 });
 
 
+///////////////////////////////////////
+//       In page nav
+///////////////////////////////////////
+
+function stickNav(){
+  var st = $(document).scrollTop();
+  var trigger = $('.intro-guide__content');
+  var triggerH = $('.intro-guide__content').outerHeight();
+  var distance = triggerH + trigger.offset().top;
+
+  var nav = $('.intro-guide__nav');
+
+  if( st > distance ){
+    nav.addClass('stuck');
+  }else{
+    nav.removeClass('stuck');
+  }
+}
+
+if( $('body').hasClass('guide') ){
+  $(document).ready(function() { stickNav(); });
+  $(document).scroll(function() { stickNav(); });
+}
+
+
+///////////////////////////////////////
+//       Weather
+///////////////////////////////////////
+
+$(document).ready(function() {
+  $.simpleWeather({
+    woeid: '1199477',
+    unit: 'c',
+    success: function(weather) {
+      var html = weather.temp+'&deg;'+weather.units.temp;
+
+      $("#weather").html(html);
+    },
+    error: function(error) {
+      $("#weather").html(error);
+    }
+  });
+});
+
+
+///////////////////////////////////////
+//       Time
+///////////////////////////////////////
+
+function calcTime(city, offset) {
+  var d = new Date();
+  var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+  var nd = new Date(utc + (3600000*offset));
+  var timeString = nd.getHours() + ":" + nd.getMinutes();
+  return timeString;
+}
+
+$(document).ready(function() {
+  var time = calcTime('Manila', '+8');
+  $('#time').html(time);
+});
+
+
+
+
 ///////////////////////////////////////////////////////////////////////////////
 });})(jQuery, this); // on ready end

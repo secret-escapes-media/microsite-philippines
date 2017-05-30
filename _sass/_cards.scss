@@ -1,12 +1,14 @@
 .card {
+  @include transition();
   display: block;
   border-radius: 5px;
   overflow: hidden;
   background-color: $white;
-  box-shadow: 0 0 6px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 0px 1px rgba(0,0,0,0.1);
   &:not(:last-child){
     margin-bottom: 2em;
   }
+  &:hover { box-shadow: 0 0 10px 1px rgba(0,0,0,0.1); }
 
   &__image { }
   &__title {
@@ -46,10 +48,10 @@
 
   // SMALL VARIANT
   &--small {
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
-    .card__image { width: 33.333%; float: left; margin-right: 1em; }
-    .card__content { text-align: left; }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .card__image { width: 33.333%; float: left; }
+    .card__content { width: 66.667%; text-align: left; }
   }
 }

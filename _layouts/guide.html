@@ -5,11 +5,26 @@ layout: default
 
 
 
-<section class="section__intro intro-guide align-center">
-  <div class="row row--padding">
-    {{ page.intro }}
-  </div>
+<section class="section--padding-none bg--white intro-guide">
+
+  <section class="intro-guide__content align-center">
+    <div class="row row--padding">
+      {{ page.intro }}
+    </div>
+  </section>
+
+  <section class="intro-guide__nav section--padding-none align-center">
+    <div class="row row--padding">
+      <ul class="list--horizontal">
+        {% for section in page.sections %}
+        <li><a href="#section-{{ section.class }}" class="title title--bolder title--expanded title--upper p--small">{{ section.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
 </section>
+
 
 
 
@@ -22,10 +37,10 @@ layout: default
   <div class="row row--padding">
     <div class="bob">
 
-      <div class="bob__image bg-image bg-image--border bg-image--shadow bg-image--ratio bg-image--ratio-4-3" style="background-image:url('{{ site.baseurl }}/img/content/guides/{{ page.class }}-{{ section.class }}.jpg');"></div>
+      <div class="bob__image bg-image bg-image--border bg-image--ratio bg-image--ratio-4-3" style="background-image:url('{{ site.baseurl }}/img/content/guides/{{ page.class }}-{{ section.class }}.jpg');"></div>
 
       <div class="bob__text">
-        <h2 class="title title--medium title--upper title--display">{{ section.title }}</h2>
+        <h2 class="title title--medium title--display">{{ section.title }}</h2>
         {{ section.content }}
       </div>
 
@@ -34,6 +49,9 @@ layout: default
 
   {% assign section-highlights = guide-highlights | where:'guide-section-class',section.class %}
   {% if section-highlights.size > 0 %}
+  <div class="row row--padding align-center">
+    <h3 class="title title--smaller title--light title--upper title--expanded">Highlights of {{ section.title }}</h3>
+  </div>
   <div class="row align-center">
     <div class="row--padding row--columns-3-3-3-3-gutters highlights {% if section-highlights.size > 4 %} highlights--tease{% endif %}" id="highlights-{{ section.class }}">
       {% for highlight in section-highlights %}
@@ -41,7 +59,7 @@ layout: default
       {% endfor %}
     </div>
     {% if section-highlights.size > 4 %}
-      <a href="#highlights-{{ section.class }}" data-target="highlights-{{ section.class }}" class="highlights__btn btn btn--solid btn--large" data-label="View all highlights" data-alt-label="Hide highlights">View all {{ section.title }} highlights</a>
+      <a href="#highlights-{{ section.class }}" data-target="highlights-{{ section.class }}" class="highlights__btn btn btn--solid" data-label="View all highlights" data-alt-label="Hide highlights">View all {{ section.title }} highlights</a>
     {% endif %}
   </div>
   {% endif %}
@@ -55,10 +73,10 @@ layout: default
 
 
 
-<section class="section--padding-large bg--white" id="highlights">
+<section class="bg--grey bg--waves-10" id="highlights">
 
-  <div class="row row--padding align-center">
-    <h2 class="title title--small title--upper title--expanded title--light">All highlights of {{ page.title }}</h2>
+  <div class="row row--padding align-center invert-text">
+    <h3 class="title title--smaller title--light title--upper title--expanded">All highlights from this guide</h3>
     <hr class="hr--center hr--margin">
   </div>
 
@@ -69,7 +87,7 @@ layout: default
       {% endfor %}
     </div>
     {% if guide-highlights.size > 9 %}
-      <a href="javascript:void(0);" data-target="highlights-{{ section.class }}" class="highlights__btn btn btn--small btn--solid btn--large">View all {{ section.title }} highlights</a>
+      <a href="javascript:void(0);" data-target="highlights-{{ section.class }}" class="highlights__btn btn btn--small btn--solid">View all {{ section.title }} highlights</a>
     {% endif %}
   </div>
 
@@ -80,16 +98,13 @@ layout: default
 
 
 
-<section class="section--padding-large bg--theme-tertiary invert-text align-center">
+<section class="section--padding-large bg--pattern bg--light-grey align-center">
   <div class="row row--padding">
-    <h2 class="title title--medium title--upper title--display">Continue exploring</h2>
+    <h2 class="title title--large title--upper title--display">Continue exploring</h2>
     <p class="p--lead">But wait there's more! Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <a href="{{ site.baseurl }}/explore" class="btn btn--invert">Keep exploring</a>
+    <a href="{{ site.baseurl }}/explore" class="btn btn--solid btn--large">Keep exploring</a>
   </div>
 </section>
-
-
-{% include offer-promo.html %}
 
 
 
@@ -103,7 +118,7 @@ layout: default
 
         <div class="row__column">
           <div class="js-close-modal modal__close"></div>
-          <div class="bg-image bg-image--ratio-16-9 bg-image--large--ratio-3-2" style="background-image: url('{{ site.baseurl }}/img/content/highlights/{{ highlight.class }}.jpg');"></div>
+          <div class="bg-image bg-image--ratio-16-9 bg-image--large--ratio-4-3" style="background-image: url('{{ site.baseurl }}/img/content/highlights/{{ highlight.class }}.jpg');"></div>
         </div>
 
         <div class="row__column modal__item__content">

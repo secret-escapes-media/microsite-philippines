@@ -23,11 +23,6 @@ intro: >
 
 <section class="bg--white">
 
-  <div class="row row--padding align-center">
-    <h2 class="title title--medium title--upper title--expanded title--display">Guides</h2>
-    <p class="p--lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla.</p>
-  </div>
-
   <div class="row row--padding guides__row">
     {% assign guides = site.html_pages | where: 'layout', 'guide' %}
     {% for guide in guides %}
@@ -42,8 +37,8 @@ intro: >
 <section>
 
   <div class="row row--padding align-center">
-    <h2 class="title title--medium title--upper title--expanded title--display">Highlights</h2>
-    <p class="p--lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla.</p>
+    <h2 class="title title--medium title--upper title--expanded title--display">Philippines highlights</h2>
+    <p class="p--lead">Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
 
   <div class="row row--padding row--columns-4-4-4-gutters">
@@ -73,11 +68,11 @@ intro: >
 
         <div class="row__column">
           <div class="js-close-modal modal__close"></div>
-          <div class="bg-image bg-image--ratio-16-9 bg-image--large--ratio-3-2" style="background-image: url('{{ site.baseurl }}/img/content/highlights/{{ highlight.class }}.jpg');"></div>
+          <div class="bg-image bg-image--ratio-16-9 bg-image--large--ratio-4-3" style="background-image: url('{{ site.baseurl }}/img/content/highlights/{{ highlight.class }}.jpg');"></div>
         </div>
 
         <div class="row__column modal__item__content">
-          <h2 class="title title--small title--expanded title--upper title--display">{{ highlight.title }}</h2>
+          <h2 class="title title--small title--upper title--display">{{ highlight.title }}</h2>
           <p class="card__location">{{ highlight.location }}</p>
           <hr />
           <p>{{ highlight.content }}</p>

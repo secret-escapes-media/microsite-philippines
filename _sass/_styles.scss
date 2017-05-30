@@ -1,11 +1,11 @@
-// all custom styles for the site
 
-body {
-  background-color: $light-grey;
-}
+/* ===============================================
+ *     CUSTOM STYLES FOR THE SITE
+ * =============================================== */
 
+body { background-color: $light-grey; }
 
-// ---------- Site footer ----------
+// -- Footer --
 
 .footer {
   background-color: $black-85;
@@ -35,7 +35,8 @@ body {
   .logo--partner { max-width: 100px; }
 }
 
-// ---------- Section styles ----------
+
+// -- Section styles --
 
 .invert-text {
   color: $white;
@@ -71,83 +72,52 @@ body {
 }
 
 
-// ---------- button ----------
-
-.btn {
-  @include transition;
-  display:inline-block;
-  padding: .5em 3em .45em;
-  border-radius: 3px;
-  border: 2px solid rgba($partner-secondary, 0.2);
-  color: $partner-secondary;
-  font-family: $main-font-family;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.9em;
-  letter-spacing: 0.2em;
-  &:hover {
-    color: white;
-    background-color: $partner-secondary;
-    text-decoration: none;
-  }
-  * + & { margin-top: 1.5em; }
-
-
-  &--solid {
-    padding: .5em 3em .4em;
-    box-shadow: 2px 2px 2px 0 rgba(black,0.2);
-    color: white; border: 0; background-color: $partner-primary;
-    &:hover { background-color: darken($partner-primary, 10) }
-  }
-  &--primary { background-color: $partner-primary; }
-
-  &--secondary { background-color: $partner-secondary; }
-  &--secondary:hover { background-color: darken($partner-secondary, 10); }
-
-  &--invert {
-    color: $white; border-color: $white;
-    &:hover { background-color: $white; color: $partner-secondary; }
-    &.btn--solid { color: $partner-secondary; border: 0; background-color: $white; }
-    &.btn--primary { color: $partner-primary; }
-    &.btn--secondary { color: $partner-secondary; }
-    &.btn--secondary:hover { background-color: darken($partner-secondary, 10); color: $white; }
-  }
-
-  &--se {
-    background-color: $se-orange;
-    &:hover { background-color: darken($se-orange, 10); }
-    &.btn--invert { color: $se-orange; background-color: $white; }
-  }
-
-
-  &--small { font-size: 0.8em; padding: .3em 2em; }
-  &--large { padding: .8em 3em; }
-}
-
-
-// ---------- Page intro sections ----------
-
+// -- Page intro sections --
 
 .intro {
+
   &-experts {
-    padding-bottom: 8em;
-    margin-bottom: -8em;
+    padding-bottom: 6em;
+    margin-bottom: -6em;
     background-color: $partner-primary;
     background-image: url('../img/bg/wave-white10.png');
     color: $white;
   }
+
   &-offers {
-    padding-bottom: 8em;
-    margin-bottom: -8em;
+    padding-bottom: 6em;
+    margin-bottom: -6em;
     background-color: $partner-secondary;
     background-image: url('../img/bg/wave-white10.png');
     color: $white;
   }
+
   &-guide {
-    background-color: $partner-tertiary;
-    background-image: url('../img/bg/wave-white10.png');
-    color: $white;
+    position: relative;
+    overflow: hidden;
+    &__content {
+      background-color: $partner-tertiary;
+      background-image: url('../img/bg/wave-white10.png');
+      color: $white;
+      margin-bottom: 50px;
+    }
+    &__nav {
+      background-color: rgba($partner-tertiary-light,0.8);
+      position: absolute;
+      bottom: 0; left: 0; width: 100%;
+      .list--horizontal {
+        height: 50px;
+        padding-top: 0.25em;padding-bottom: 0.25em;
+      }
+
+      &.stuck {
+        position: fixed; top: 0; bottom: auto;
+        z-index: 100;
+        box-shadow: 0 0 5px 0 rgba($black, 0.2);
+      }
+    }
   }
+
 }
 
 
@@ -160,10 +130,9 @@ body {
 .highlights {
   overflow: hidden;
   position: relative;
-  padding-top: $margin/2;
   &--hide {
     margin-bottom: -20px;
-    height: 240px;
+    height: 320px;
     &:after {
       content: "";
       position: absolute;
@@ -175,6 +144,7 @@ body {
       background-repeat: repeat-x;
     }
     .bg--light-grey &:after { background-image: url('../img/icons/highlights-fade-light-grey.png'); }
+    .bg--grey &:after { background-image: url('../img/icons/highlights-fade-grey.png'); }
   }
   &__btn { position: relative; z-index: 10; }
 }
@@ -198,13 +168,13 @@ body {
  * =============================================== */
 
 .guides__row .guide {
+  overflow: hidden;
+  margin-top: $margin;
   margin-bottom: $margin;
   @include bp(xxlarge){
     @include gallery($gutters 4);
   }
 }
-
-
 
 
 /* ===============================================
@@ -215,7 +185,7 @@ body {
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
   border-radius: 3px;
   background-color: $light-grey;
-  &:not(:last-child) { margin-bottom: $margin*2; }
+  &:not(:last-child) { margin-bottom: 5em; }
 
   &__summary {
     background-color: $white;
@@ -239,3 +209,4 @@ body {
     padding: $margin;
   }
 }
+

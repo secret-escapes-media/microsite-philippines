@@ -1,39 +1,54 @@
 <section class="bg--waves-10 bg--theme-primary section--padding-none fold-container" id="travel-details">
-
+  <!-- HIDE/SHOW BTN -->
   <a href="#travel-details" class="btn btn--solid fold__btn" data-label="Philippines travel details" data-alt-label="Hide Philippines travel details" data-target="travel-details">Philippines travel details</a>
 
+  <!-- CONTENT -->
   <section class="section--padding invert-text fold">
 
+    <!-- STATS -->
     <div class="row row--padding row--columns-4-4-4-gutters align-center">
 
       <div class="row__column">
-        <h4 class="title title--smallest title--display">
+        <h4 class="title title--micro title--display">
           <img src="{{site.baseurl}}/img/icons/details-weather.svg" width="50" alt="Weather">
         </h4>
-        <p class="p--lead p--bold">29ºC in Manila, Philippines</p>
+        <p class="title title--upper title--expanded">
+          It's currently <span id="weather" class="title--bolder">29ºC</span><br />
+          in Manila, Philippines
+        </p>
       </div>
 
+
       <div class="row__column">
-        <h4 class="title title--smallest title--display">
+        <h4 class="title title--micro title--display">
           <img src="{{site.baseurl}}/img/icons/details-currency.svg" width="50" alt="Currency">
         </h4>
-        <p class="p--lead p--bold">1 GBP → 64.82472 PHP</p>
+        <p class="title title--upper title--expanded">
+          1 GBP will currently <br />
+          get you <span class="title--bolder">64.82 PHP</span>
+        </p>
       </div>
 
+
       <div class="row__column">
-        <h4 class="title title--smallest title--display">
+        <h4 class="title title--micro title--display">
           <img src="{{site.baseurl}}/img/icons/details-time.svg" width="50" alt="Local time">
         </h4>
-        <p class="p--lead p--bold">21:22</p>
+        <p class="title title--upper title--expanded">
+          The local time in the<br />
+          Philippines is <span id="time" class="title--bolder"></span>
+        </p>
       </div>
 
     </div>
 
+
+    <!-- TRAVEL ADVICE -->
     <div class="row row--padding align-center">
       <hr class="hr--margin hr--center">
       <p>A word to the wise – be sure to triple-check weather patterns when picking an island. The Philippines are no stranger to typhoons and dramatic weather, but with a bit of careful planning, you can ensure a blissful getaway to your very own tropical paradise. From July to September, the western parts of the country suffer from a heavy monsoon, and typhoon warnings are to be heeded across the country. Plan ahead, and all will be well!</p>
     </div>
 
-  </section>
 
+  </section>
 </section>

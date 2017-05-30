@@ -1,5 +1,7 @@
-// general typographic styles
 
+/* ===============================================
+ *     GENERAL TYPOGRAPHIC STYLES
+ * =============================================== */
 
 // -------- root typography styles --------
 
@@ -21,12 +23,14 @@ input, textarea, keygen, select, button {
 }
 
 
-// -------- Headings --------
+/* ===============================================
+ *     HEADINGS
+ * =============================================== */
 
 .title {
   color: $text-heading;
   letter-spacing: .025em;
-  line-height: 1.15;
+  line-height: 1.2;
   + * { margin-top: 0.75em; }
 
   &--display { font-family: $title-font-family; line-height: 1; }
@@ -60,7 +64,7 @@ input, textarea, keygen, select, button {
   &--large       { font-size: 2.986em; }
   &--medium      { font-size: 2.25em; }
   &--small       { font-size: 2em; }
-  &--smaller     { font-size: 1.867em; }
+  &--smaller     { font-size: 1.75em; }
   &--smallest    { font-size: 1.5em; }
   &--tiny        { font-size: 1.44em; }
   &--micro       { font-size: 1.2em; }
@@ -68,11 +72,17 @@ input, textarea, keygen, select, button {
     &--largest     { font-size: 8em; }
     &--larger      { font-size: 6em; }
     &--large       { font-size: 4em; }
-    &--medium      { font-size: 2.933em; }
-    &--small       { font-size: 2.467em; }
-    &--smaller     { font-size: 2.25em; }
+    &--medium      { font-size: 2.833em; }
+    &--small       { font-size: 2.367em; }
+    &--smaller     { font-size: 2em; }
+    &--smallest     { font-size: 1.75em; }
   }
 }
+
+
+/* ===============================================
+ *     PARAGRAPH
+ * =============================================== */
 
 .p {
   &--lead { }
@@ -95,7 +105,8 @@ input, textarea, keygen, select, button {
     }
   }
 }
-.align-center p, p.align-center { margin-left: auto; margin-right: auto; }
+.align-center p,
+p.align-center { margin-left: auto; margin-right: auto; }
 
 
 
@@ -110,7 +121,7 @@ dl {
   &--horizontal {
     list-style: none; padding: 0; margin: 0;
     li {
-      display: inline-block; position: relative; padding: 0.5em 1.5em; margin: 0.5em 0;
+      display: inline-block; position: relative; padding: 0 1.5em; margin: 0.5em 0;
     }
     li:after {
       content: '';
@@ -120,7 +131,7 @@ dl {
       display: block;
       height: 100%;
       width: 1px;
-      background-color: rgba($black,0.2);
+      background-color: rgba($black,0.1);
       transform: translateY(-50%);
     }
     li:last-child:after { content: none; }
@@ -128,49 +139,32 @@ dl {
       padding-right: 0;
       &:after { content: none; }
     }
+
+    .flexbox & {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      li {
+        flex-grow: 1;
+        a { width: 100%; display: inline-block; }
+      }
+    }
+
   }
   &--lined {
     li {
       list-style: none;
       padding: 10px 0;
-      border-top: 1px solid $black-25;
+      border-top: 1px solid rgba($black,0.1);
       .invert-text & { border-top: 1px solid rgba($white,0.1); }
     }
   }
 }
 
 
-// -------- fieldset --------
-
-fieldset {
-  display: block;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  -webkit-padding-before: 0.5em;
-  -webkit-padding-start: 1em;
-  -webkit-padding-end: 1em;
-  -webkit-padding-after: 1em;
-  min-width: -webkit-min-content;
-  border-width: 1px;
-  border-style: solid;
-  border-color: $light-grey;
-  font-size: 0.85em;
-  legend {
-    font-size: 1em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 600;
-    display: block;
-    -webkit-padding-start: 10px;
-    -webkit-padding-end: 10px;
-    border-width: initial;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;
-  }
-}
-
-// -------- general content styles --------
+/* ===============================================
+ *     GENERAL CONTENT STYLES
+ * =============================================== */
 
 p             { max-width: $xlarge; }
 p + *         { margin-top: 1em; }
@@ -197,4 +191,61 @@ hr {
 a {
   &:hover { text-decoration: none; }
   p &:hover { text-decoration: underline; }
+}
+
+
+
+// ---------- Buttons ----------
+
+.btn {
+  @include transition;
+  display:inline-block;
+  padding: .5em 3em .45em;
+  border-radius: 3px;
+  border: 2px solid rgba($partner-secondary, 0.2);
+  color: $partner-secondary;
+  font-family: $main-font-family;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
+  &:hover {
+    color: white;
+    background-color: $partner-secondary;
+    text-decoration: none;
+  }
+  * + & { margin-top: 1.5em; }
+
+  &--solid {
+    padding: .5em 3em .4em;
+    box-shadow: 2px 2px 2px 0 rgba(black,0.2);
+    color: white; border: 0; background-color: $partner-primary;
+    &:hover { background-color: darken($partner-primary, 10) }
+  }
+
+  &--primary { background-color: $partner-primary; }
+  &--primary:hover { background-color: darken($partner-primary, 10); }
+
+  &--secondary { background-color: $partner-secondary; }
+  &--secondary:hover { background-color: darken($partner-secondary, 10); }
+
+  &--invert {
+    color: $white; border-color: $white;
+    &:hover { background-color: $white; color: $partner-secondary; }
+    &.btn--solid { color: $partner-secondary; border: 0; background-color: $white; }
+    &.btn--primary { color: $partner-primary; }
+    &.btn--secondary { color: $partner-secondary; }
+    &.btn--secondary:hover { background-color: darken($partner-secondary, 10); color: $white; }
+  }
+
+  &--se {
+    background-color: $se-orange;
+    &:hover { background-color: darken($se-orange, 10); }
+    &.btn--invert { color: $se-orange; background-color: $white; }
+  }
+
+  &--small { font-size: 0.85em; letter-spacing: 0.05em; text-transform: none; padding: .4em 2em; }
+  &--large { font-size: 1em; padding: .7em 3em; }
+
 }

@@ -27,7 +27,7 @@ section,.section {
   .section {
     &--padding {
       padding-top: 3.375em; padding-bottom: 3.375em;
-      
+
       &-xxlarge { padding-top: 8em; padding-bottom: 8em; }
       &-xlarge { padding-top: 5.2em; padding-bottom: 5.2em; }
       &-large { padding-top: 4.2em; padding-bottom: 4.2em; }
@@ -103,18 +103,22 @@ section,.section {
 @include bp(large){
 
   // two columns without gutter
+  .row--columns-3-9 { @include two-column-grid( 3, 9 ); }
   .row--columns-4-8 { @include two-column-grid( 4, 8 ); }
   .row--columns-5-7 { @include two-column-grid( 5, 7 ); }
   .row--columns-6-6 { @include two-column-grid( 6, 6 ); }
   .row--columns-7-5 { @include two-column-grid( 7, 5 ); }
   .row--columns-8-4 { @include two-column-grid( 8, 4 ); }
+  .row--columns-9-3 { @include two-column-grid( 9, 3 ); }
 
   // two columns with gutter
+  .row--columns-3-9-gutters { @include two-column-grid( 3, 9, gutters ); }
   .row--columns-4-8-gutters { @include two-column-grid( 4, 8, gutters ); }
   .row--columns-5-7-gutters { @include two-column-grid( 5, 7, gutters ); }
   .row--columns-6-6-gutters { @include two-column-grid( 6, 6, gutters ); }
   .row--columns-7-5-gutters { @include two-column-grid( 7, 5, gutters ); }
   .row--columns-8-4-gutters { @include two-column-grid( 8, 4, gutters ); }
+  .row--columns-9-3-gutters { @include two-column-grid( 9, 3, gutters ); }
 
   // three columns without gutter
   .row--columns-4-4-4 .row__column { @include gallery(4); }
