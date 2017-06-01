@@ -1,31 +1,241 @@
 
-##  =========================
+##  ===========================================================================
 ##  LUZON : luzon
 ##  Sections :
-##  =========================
+##  ===========================================================================
 
-- title: Hanging Coffins of Sagada
-  class: hanging-coffins-of-sagada
+##========= MANILA & CENTRAL LUZON : central-luzon =========
+
+- title: Manila
+  feature: true
+  class: manila
   location: Manila
   guide-class: luzon
-  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  guide-section-class: central-luzon
+  content: Set on a deep bay with famed sunsets, the city has many Spanish-colonial landmarks, national memorials and monuments, a centuries-old Chinatown and a diversity of museums.
 
-- title: Nagcarlan Underground Cemetery
-  class: nagcarlan-underground-cemetery
+- title: Intramuros
+  class: intramuros
   location: Manila
   guide-class: luzon
-  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  guide-section-class: central-luzon
+  content: >
+    The oldest district and historic core of Manila, Philippines. Construction of defensive walls was started by the Spanish colonial govt in 16th C. One of the 12 worldwide sites "on the verge" of irreparable loss and destruction. Includes: Fort Santiago
 
 - title: Abandoned Theme Park
   class: abandoned-theme-park
   location: Manila
   guide-class: luzon
-  content: Maecenas faucibus mollis interdum. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  guide-section-class: central-luzon
+  content:
 
-##  =========================
-##  PANAY : panay
-##  Sections : panay, cebu, bohol, negros
-##  =========================
+- title: Taal Volcano and Lake Hike
+  class: taal-volcano-and-lake-hike
+  location:
+  guide-class: luzon
+  guide-section-class: central-luzon
+  content:
+
+- title: Nagcarlan Underground Cemetery
+  class: nagcarlan-underground-cemetery
+  location:
+  guide-class: luzon
+  guide-section-class: central-luzon
+  content:
+
+- title: Minalungao National Park
+  class: minalungao-national-park
+  location:
+  guide-class: luzon
+  guide-section-class: central-luzon
+  content:
+
+- title: Zambales Coast
+  class: zambales-coast
+  location:
+  guide-class: luzon
+  guide-section-class: central-luzon
+  content:
+
+##========= NORTH LUZON : north-luzon =========
+
+- title: Batanes
+  class: batanes
+  location:
+  guide-class: luzon
+  guide-section-class: north-luzon
+  content: These isolated islands are a perfect antidote to city life. As the northernmost islands in the country, you’ll find a sparse and curious collection of coffee huts, souvenir shops and restaurants. A tiny population facilitates this, but the main draw is the nature – untouched, pristine and luscious scenes await.
+
+- title: Vigan
+  class: vigan
+  location:
+  guide-class: luzon
+  guide-section-class: north-luzon
+  content: A time warp town of Spanish colonial charms that is effortlessly beautiful. Centred around pedestrianised Crisologo St, you’ll find a cobbled road lined with antique shops and cafes, as horse-drawn carts – known as Kalesa – trot and clap up and down. A surreal yet captivating scene, Vigan is a moment in Filipino history.
+
+- title: Banaue Rice Terraces
+  class: banaue-rice-terraces
+  location:
+  guide-class: luzon
+  guide-section-class: north-luzon
+  content: These ancient rice terraces offer magnificent scenes in the north of the island chain. Carved out of the undulating hills and mountains that offer no clear land for farming, these terraces were a practical and dramatic solution to the Ifugao community’s needs. The shelved, stepped hills are a true wonder, now protected by UNESCO.
+
+- title: Hanging Coffins of Sagada
+  class: hanging-coffins-of-sagada
+  location:
+  guide-class: luzon
+  guide-section-class: north-luzon
+  content: Deep in the Mountain Province lies this particularly eerie sight. The pre-colonial community has a burial tradition, whereby they nail coffins to the side of a cliff following days of vigil with the deceased. The reasons are numerous, including a fear of rotting in the ground and supposedly an old link to ancient head-hunting tribes. A morbidly-fascinating display set in stunning, mountainous Sagada.
+
+- title: Hundred Islands National Park
+  class:
+  location:
+  guide-class: luzon
+  guide-section-class: north-luzon
+  content:
+
+##========= SOUTHEAST LUZON : southeast-luzon =========
+
+- title: Masbate Province
+  class: masbate-province
+  location: Manila
+  guide-class: luzon
+  guide-section-class: southeast-luzon
+  content:
+
+- title: Mount Mayon
+  class: mount-mayon
+  location: Manila
+  guide-class: luzon
+  guide-section-class: southeast-luzon
+  content:
+
+
+
+
+
+
+##  ===========================================================================
+##  PALAWAN : palawan
+##  Sections : palawan, el-nido, calamian-islands
+##  ===========================================================================
+
+##========= PALAWAN : palawan =========
+
+- title: Puerto Princesa Underground River
+  class: puerto-princesa-underground-river
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: palawan
+  content: Venture deep into the mysterious grandeur of Puerto Princesa’s underground cave network. Enter vast rock corridors, resplendent galleries and startling formations that plunge into dark pools. The best bit? See it all from a kayak, gliding along on eerily still waters. The underground river is an awe-inspiring sight.
+
+- title: Honda Bay
+  class: honda-bay
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: palawan
+  content: A famed Palawan beauty spot a short hop north of Puerto Princesa. Discover an array of island idylls, with excellent diving, snorkelling and swimming in crystal-clear waters.
+
+- title: Vietnamese Village
+  class: vietnamese-village
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: palawan
+  content: Viet Ville is a small village of Vietnamese refugees that fled the war in the 70s. Today you’ll find a strong community in the forested splendour of Palawan. Alight for authentic, delicious Vietnamese cooking at great prices.
+
+- title: Butterfly Garden
+  class: butterfly-garden
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: palawan
+  content: Walk the garden, filled with exotic Phillipino flowers, as a host of colourful butterflies glide and weave above your head. A beautiful scene, this small eco-centre does much to conserve the unique and colourful butterflies of the Philippines. If you’re lucky, you might see a young butterfly emerge from its cocoon, or instead be surprised by walking sticks and a scorpion.
+
+- title: Tabon Caves
+  class: tabon-caves
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: palawan
+  content: Take a short boat trip to the tip of this nearly inaccessible peninsula and discover shorefront caves spanning 138 hectares. Known as ‘The Cradle of Philippine Civilization’, it was here that the remains of the 22,000-year-old Tabon man was found. Evidence of ancient habitation can be found throughout the cave network.
+
+- title: Batac Tribe
+  class: batac-tribe
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: palawan
+  content: This isolated, indigenous, mountain-dwelling tribe offer a rare, anthropological treat. For intrepid explorers only, a few hours trek through centuries-old virgin forests reveals this age-old settlement. Wholly disconnected from the modern world, their way of life is a fascinating glimpse into an entirely foreign way of living. Be sure to make a donation of food, you’re pass into the village.
+
+##========= EL NIDO : el-nido =========
+
+- title: Matinloc & Tapiutan Islands
+  class: matinloc-tapiutan-islands
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: el-nido
+  content: These two snaking islands face each other to form a strait which offers some of the finest snorkelling in the land. Exquisite beaches are also to be found, along with something rather special – a secret beach. A narrow split in the western wall can be swam through to reveal a truly private beach, but a word to the wise – the swim can be treacherous at the wrong times so be sure to enlist a guide.
+
+- title: Miniloc Island
+  class: miniloc-island
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: el-nido
+  content: Miniloc is most famous for the breathtaking lagoons that it hosts. Big, Small and Secret Lagoon are simply stunning natural pools that deserve seeking out. Drift over the shallow edge of Big Lagoon (you may have to leave your boat behind) or sneak through the thin break in the wall for Small Lagoon where you’ll find a hidden sanctuary with caves and beaches to explore. Be sure to leave before the tide comes in or you may not get back out!
+
+- title: Cadlao Island
+  class: cadlao-island
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: el-nido
+  content: Just close enough to El Nido’s beaches to take a lone kayak excursion across the sea, Cadlao Island offers stunning island splendour with a central lagoon forming a crystal clear, shallow pool of water. Perfect for endless snorkelling amongst the corals.
+
+- title: El Nido Marine Reserve
+  class: el-nido-marine-reserve
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: el-nido
+  content: The Bacuit archipelago make up this astonishing marine reserve. What this means is that sharp-eyed snorkelers and divers will seen an astonishing and colourful array of wildlife, plus technicolor corals washed with schools of fish. It’s what makes El Nido such a paradise – make sure you explore all that’s available!
+
+##========= CALAMIAN ISLANDS : calamian-islands =========
+
+- title: Busuanga
+  class: busuanga
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: calamian-islands
+  content: The largest of the islands and where most excursions start, is the only one where you’ll find roads, vehicles and other modern expectations. Head to Coron, a market town that will kit you out for island excursions, or explore the famed WWII shipwrecks that litter the coastline.
+
+- title: Coron Island
+  class: coron-island
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: calamian-islands
+  content: With more shipwrecks to explore, shallow reefs for snorkelling, and spectacular underwater caves, this is another diver’s dream. Inland you’ll find a treasure of natural features; seven mountain lakes including the sublime Kayangan Lake (cleanest in all the Phillipines), the famed twin lagoons and underwater Barracuda Cave, and plenty more.
+
+- title: Calauit Island Safari
+  class: calauit-island-safari
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: calamian-islands
+  content: A whole island dedicated to the preservation of wildlife, creating a safari island mecca. But these animals aren’t indigenous – in fact they were shipped over from Kenya as part of a wider project to conserve Africa's wildlife. Discover roaming herds of giraffe, zebra and more!
+
+- title: Culion
+  class: culion
+  location: Palawan
+  guide-class: palawan
+  guide-section-class: calamian-islands
+  content: Excellent snorkelling awaits at Dynamite Point, stunning beaches fringe the island, and all the usual magnificent FIlipino qualities shine through on this sun-drenched rock. However this island also harbours a startling history; in the early part of the 20th century it was one of the world’s largest leper colonies, a story told in the Culion archives. There’s also an 18th century Spanish fort that was converted into a church, plus hiking opportunities that offer sublime panorama.
+
+
+
+
+
+
+
+##  ===========================================================================
+##  ISLAND HOP THE VISAYAS : visayas
+##  Sections : panay, boracay, cebu, bohol, negros
+##  ===========================================================================
+
+##========= PANAY : panay =========
 
 - title: Bakhawan Eco-Park
   class: bakhawan-eco-park
@@ -89,7 +299,7 @@
   guide-class: visayas
   content: This tiny spit of land above Panay has been a much-hyped island paradise, having come second in the draw of best island paradise in the world by Travel + Leisure readers, losing out to Palawan. That’s right, top two were both in the Philippines! The 4km stretch of White Beach is a dreamy idyll that constitutes the finest elements of the country – shallow turquoise waters, powder-white sands, banca boats gliding across the calm seas and endless shady palm trees. There’s a reason it’s such a massive tourist draw – astounding beauty lies at every glance.
 
-## CEBU
+##========= CEBU : cebu =========
 
 - title: Lechon
   class: lechon
@@ -140,7 +350,7 @@
   guide-section-class: cebu
   content: This small bay has drawn majestic whale sharks offering an intrepid glance at these magnificent creatures. Many operators offer the chance to swim with the sharks – they are, after all, pretty harmless – however there is growing pressure to regulate this more heavily, as the industry is potentially having a detrimental effect on the population. Inform yourself and consider your options first.
 
-## BOHOL
+##========= BOHOL : bohol =========
 
 - title: Chocolate Hills
   class: chocolate-hills
@@ -177,7 +387,7 @@
   guide-section-class: bohol
   content: Cast off into serene waters as the sun sets, invigorating your surroundings in a vivid display of colour. As you paddle through this pristine mangrove river and the light slowly bleeds away, a faint glimmer gives way to a cloud of luminescence as the fireflies dance above your head. An effortlessly romantic scene that should not be missed!
 
-## NEGROS
+##========= NEGROS : negros =========
 
 - title: Dumaguete
   class: dumaguete
@@ -209,37 +419,3 @@
 
 
 
-##  =========================
-##  PALAWAN : palawan
-##  Sections :
-##  =========================
-
-
-
-##  =========================
-##  OTHER HIGHLIGHTS
-##  =========================
-
-- title: Taal Volcano Hike
-  class: taal-volcano-hike
-  location:
-  guide-class:
-  content:
-
-- title: Batanes
-  class: batanes
-  location:
-  guide-class:
-  content: These isolated islands are a perfect antidote to city life. As the northernmost islands in the country, you’ll find a sparse and curious collection of coffee huts, souvenir shops and restaurants. A tiny population facilitates this, but the main draw is the nature – untouched, pristine and luscious scenes await.
-
-- title: Calauit Safari
-  class: calauit-safari
-  location:
-  guide-class:
-  content:
-
-- title: Banaue Rice Terraces
-  class: banaue-rice-terraces
-  location:
-  guide-class:
-  content:

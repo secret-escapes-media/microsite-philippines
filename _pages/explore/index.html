@@ -37,13 +37,13 @@ intro: >
 <section>
 
   <div class="row row--padding align-center">
-    <h2 class="title title--medium title--upper title--expanded title--display">Philippines highlights</h2>
-    <p class="p--lead">Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h2 class="title title--medium title--upper title--expanded title--display">Top Philippines Highlights</h2>
+    <p class="p--lead">Some of our favourite things to see and do, not to be missed on a trip to the Philippines!</p>
   </div>
 
   <div class="row row--padding row--columns-4-4-4-gutters">
 
-    {% assign highlights = site.data.highlights %}
+    {% assign highlights = site.data.highlights | where: 'feature', 'true' %}
     {% for highlight in highlights %}
       {% if forloop.index == 1 or forloop.index == 2 or forloop.index == 3 %}
         {% include highlight.html %}
