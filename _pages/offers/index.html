@@ -19,11 +19,11 @@ intro: >
   <div class="row row--padding">
     {% assign offers = site.data.offers | sort: 'saved' | reverse %}
     {% for offer in offers %}
-      {% include offer-small.html %}
+      {% include offers/small.html %}
     {% endfor %}
   </div>
 </section>
 
 
 
-{% include offer-promo.html %}
+{% include offers/promo.html %}

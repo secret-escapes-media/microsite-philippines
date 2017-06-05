@@ -105,9 +105,12 @@ body { background-color: $light-grey; }
       background-color: rgba($partner-tertiary-light,0.8);
       position: absolute;
       bottom: 0; left: 0; width: 100%;
+      padding-top: 0;padding-bottom: 0;
       .list--horizontal {
         height: 50px;
         padding-top: 0.25em;padding-bottom: 0.25em;
+        white-space: nowrap;
+        overflow: auto;
       }
 
       &.stuck {
@@ -164,15 +167,35 @@ body { background-color: $light-grey; }
 
 
 /* ===============================================
- *     EXPLORE PAGE
+ *     OVERVIEW PAGE
  * =============================================== */
 
-.guides__row .guide {
+.video-box {
+  width: 100%;
+  position: relative;
+  &__iframe {
+    position: absolute;
+    top: 0; left: 0;
+  }
+}
+
+
+ /* ===============================================
+  *     EXPLORE PAGE
+  * =============================================== */
+.guide-item {
   overflow: hidden;
   margin-top: $margin;
   margin-bottom: $margin;
-  @include bp(xxlarge){
+}
+.guides__row .guide-item {
+  @include bp(xlarge){
     @include gallery($gutters 4);
+  }
+}
+.guides__row-6-6 .guide-item {
+  @include bp(xlarge){
+    @include gallery($gutters 6);
   }
 }
 

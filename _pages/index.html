@@ -10,8 +10,8 @@ banner-title: the Philippines
 
 intro: >
   <p class="p--lead">A resplendent collection of over 7,000 island paradises, where clear shallow waters lap endless sand banks and hidden coves – a treat for explorers and deck-chair loungers alike.</p>
-  <p>Throw-in a culinary tradition steeped in Spanish and southeast Asian influences, characterised by a lip-smacking medley of spices, a people who are renowned for their warmth and hospitality, and tropical climes that offer endless sun-kissed lounging, and the ingredients are there for serene escapes in a veritable paradise.</p>
-  <p>Discover the limestone crags that silently pierce the waters of Bacuit Bay, offering an impressive scene from above or below the warm water, or immerse yourself in the colourful vivacity of the country’s fiestas, bedecked with technicolour dress and hypnotic dancing. Unpick the sprawling metropolis of Manila, or simply feel the crisp-white sand under your toes on White Beach in Boracay until the glowing sun dips and sinks below the luminous horizon. </p>
+  <p>Discover a culinary tradition steeped in Spanish and southeast Asian influences that is characterised by a lip-smacking medley of spices, cooked up by a people who are renowned for their warmth and generous hospitality. Tropical climes offering endless sun-kissed lounging add to the mix, leaving you with the ingredients for serene escapes in a veritable paradise.</p>
+  <p>Explore the limestone crags that silently pierce the waters of Bacuit Bay and paint an impressive scene from above or below the warm water. Immerse yourself in the colourful vivacity of the country’s fiestas, bedecked with technicolour dress and hypnotic dancing. Unpick the sprawling metropolis of Manila, or simply feel the crisp-white sand under your toes on White Beach in Boracay until the glowing sun dips and sinks below the luminous horizon. </p>
 
 
 
@@ -21,12 +21,12 @@ sections:
     class: island
     link: explore/palawan/
     content: >
-      <p class="p--lead">The Philippine islands are consistently voted the most cherished in the world and ogling a few pictures proves it’s not hard to see why.</p>
-      <p>Crystal-clear waters reveal schools of tropical fish darting around beneath your feet, undeterred. Startlingly white sands cushion wistful strolls at sunset, while Bancas dart from island to island and fishermen unload their hauls on makeshift piers. The island life will quickly enchant you, mesmerizing any visitor at first glance.</p>
+      <p class="p--lead">The Philippine islands are consistently voted the most cherished in the world and ogling a few pictures makes it easy to see why.</p>
+      <p>Crystal-clear waters reveal schools of tropical fish darting around beneath your feet, undeterred. Startlingly-white sands cushion wistful strolls at sunset, while Bancas dart from island to island and fishermen unload their hauls on makeshift piers. The island life will quickly enchant you, mesmerising any visitor at first glance.</p>
 
   - title: Curious Cooking
     class: cooking
-    link: explore/panay/#section-cebu
+    link: explore/visayas/#section-cebu
     content: >
       <p class="p--lead">The food of the Philippines is a sumptuous medley of fiery spices, tropical produce and a curated journey through heat, sourness, and delicacy. </p>
       <p>Trump cards like balut and dinuguan, the rather stomach-turning fertilized duck egg and offal in blood dishes, don’t do Filipino cooking justice. With influence from Malaysia, China and most interestingly Spain (owing to a colonial past), you’ll find unique dishes like succulent lechon, classic adobo, rich kare kare, and all washed down with the Filipino fave, rum! Throw in endless snacking on dried mango and you have a wholesome, delicious recipe for a memorable stay.</p>
@@ -35,14 +35,14 @@ sections:
     class: culture
     link: explore/luzon/
     content: >
-      <p class="p--lead">Pre-colonial heritage have intertwined seamlessly with a strong Spanish influence, offering a colourful menagerie of traditions and festivities.</p>
-      <p>With a remarkably 80% Catholic population, Spanish roots offer up colourful fiestas, festivals marking saints days throughout the year. Karaoke is also huge – a plethora of bars offer  shrieks and pitch-perfect renditions much to the delight of, well, everyone. Blame the American occupation…</p>
+      <p class="p--lead">Pre-colonial heritage has intertwined seamlessly with a strong Spanish influence, offering a colourful menagerie of traditions and festivities.</p>
+      <p>With a remarkably 80% Catholic population, Spanish roots offer up colourful fiestas, festivals marking saints days throughout the year. Karaoke is also huge – a plethora of bars offer shrieks and pitch-perfect renditions much to the delight of, well, everyone. Blame the American occupation…</p>
 
   - title: Effortless Indulgence
     class: indulgence
-    link: explore/panay/#highlight-boracay
+    link: explore/visayas/#highlight-boracay
     content: >
-      <p class="p--lead">Effortless relaxation awaits – from catatonic sunlounger bathing to groan-inducing beachfront massages, the Philippines are set to indulge you with every whim that ensures total comfort.</p>
+      <p class="p--lead">Effortless relaxation awaits – from catatonic sunlounger bathing to groan-inducing beachfront massages, the Philippines is set to indulge you with every whim that ensures total comfort.</p>
       <p>For those that seek more adventure, the islands offer superb diving, with WWII wrecks and acclaimed coral reefs to explore. Wildlife lovers can revel in this bountiful land, where new animals are still being discovered. </p>
 
 ---
@@ -53,9 +53,21 @@ sections:
 
 
 
-<section class="section--padding-xxlarge bg--image-fixed align-center invert-text" style="background-image: url('{{site.baseurl}}/img/bg/banner-overview2.jpg');">
-  <div class="row row--padding">
-    <h2 class="title title--medium title--upper title--display">7000 tropical islands ripe for exploration...</h2>
+<section class="section--padding-xlarge bg--image-fixed align-center invert-text" style="background-image: url('{{site.baseurl}}/img/bg/banner-overview2.jpg');">
+  <div class="row row--xthin row--padding">
+    <a
+      href="javascript:void(0);"
+      id="video-btn"
+      class="bg-image bg-image--ratio bg-image--ratio-16-9 bg-image--zoom js-open-modal"
+      data-modal="video"
+      data-modal-item="video"
+      data-modal-video="https://www.youtube.com/embed/KBfUBoXzFHs?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1"
+      style="background-image: url({{ site.baseurl }}/img/content/video-image.png);">
+      <span class="bg-image__content">
+        <img src="{{site.baseurl}}/img/content/video-image-content.png" alt="Play">
+      </span>
+    </a>
+      {% include video-modal.html %}
   </div>
 </section>
 
@@ -80,11 +92,10 @@ sections:
 
 
 
-<section class="section--padding-large bg--light-grey bg--pattern align-center">
+<section class="section--padding-xlarge bg--light-grey bg--pattern align-center">
   <div class="row row--padding">
-    <h2 class="title title--medium title--upper title--display">Start exploring</h2>
-    <p class="p--lead">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. </p>
-    <a href="{{ site.baseurl }}/explore" class="btn btn--solid">Start now</a>
+    <h2 class="title title--large title--upper title--display">Get exploring</h2>
+    <a href="{{ site.baseurl }}/explore" class="btn btn--solid btn--large">Start now</a>
   </div>
 </section>
 

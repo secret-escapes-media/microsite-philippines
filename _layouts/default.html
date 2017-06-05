@@ -13,7 +13,9 @@
 
     {{ content }}
 
+    {% unless page.class == 'offers' %}
       {% include competition-banner.html %}
+    {% endunless %}
 
     {% include footer.html %}
 

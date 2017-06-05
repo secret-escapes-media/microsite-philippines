@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign guide-highlights = site.data.highlights | where:'guide-class',page.class %}
+{% assign highlights = site.data.highlights | where:'guide-class',page.class %}
 
 
 
@@ -47,15 +47,15 @@ layout: default
     </div>
   </div>
 
-  {% assign section-highlights = guide-highlights | where:'guide-section-class',section.class %}
+  {% assign section-highlights = highlights | where:'guide-section-class',section.class %}
   {% if section-highlights.size > 0 %}
   <div class="row row--padding align-center">
-    <h3 class="title title--smaller title--light title--upper title--expanded">Highlights of {{ section.title }}</h3>
+    <h3 class="title title--smallest title--light title--upper title--expanded">Highlights of {{ section.title }}</h3>
   </div>
   <div class="row align-center">
     <div class="row--padding row--columns-3-3-3-3-gutters highlights {% if section-highlights.size > 4 %} highlights--tease{% endif %}" id="highlights-{{ section.class }}">
       {% for highlight in section-highlights %}
-        {% include highlight.html %}
+        {% include highlights/normal.html %}
       {% endfor %}
     </div>
     {% if section-highlights.size > 4 %}
@@ -71,76 +71,29 @@ layout: default
 
 
 
-
-
-<section class="bg--grey bg--waves-10" id="highlights">
-
-  <div class="row row--padding align-center invert-text">
-    <h3 class="title title--smaller title--light title--upper title--expanded">All highlights from this guide</h3>
-    <hr class="hr--center hr--margin">
-  </div>
-
-  <div class="row align-center">
-    <div class="row--padding row--columns-4-4-4-gutters highlights {% if guide-highlights.size > 9 %} highlights--tease{% endif %}" id="highlights-{{ section.class }}">
-      {% for highlight in guide-highlights %}
-        {% include highlight.html class="small" %}
-      {% endfor %}
-    </div>
-    {% if guide-highlights.size > 9 %}
-      <a href="javascript:void(0);" data-target="highlights-{{ section.class }}" class="highlights__btn btn btn--small btn--solid">View all {{ section.title }} highlights</a>
-    {% endif %}
-  </div>
-
-</section>
-
-
-
-
-
-
 <section class="section--padding-large bg--pattern bg--light-grey align-center">
+
   <div class="row row--padding">
-    <h2 class="title title--large title--upper title--display">Continue exploring</h2>
-    <p class="p--lead">But wait there's more! Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <h2 class="title title--medium title--upper title--display">Continue exploring</h2>
+    <p class="p--lead">Unpick more of the Philippines with our other guides – don’t miss them!</p>
+  </div>
+
+  <div class="row row--thin row--padding guides__row-6-6">
+    {% assign guides = site.html_pages | where: 'layout', 'guide' | sort:'guide-order' %}
+    {% for guide in guides %}
+      {% unless guide.class == page.class %}
+        {% include guides/small.html %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+
+  <div class="row row--padding">
     <a href="{{ site.baseurl }}/explore" class="btn btn--solid btn--large">Keep exploring</a>
   </div>
+
 </section>
 
 
 
 
-<div class="js-modal modal modal--vertical-align is-closed" id="modal-highlights">
-  <div class="modal__wrap row row--padding">
-    <div class="modal__content" id="modal__slider">
-
-      {% for highlight in guide-highlights %}
-      <div class="slide modal__item modal__item-inactive row row--columns-6-6 row--columns-vertical-align" id="modal__item-{{ highlight.class }}">
-
-        <div class="row__column">
-          <div class="js-close-modal modal__close"></div>
-          <div class="bg-image bg-image--ratio-16-9 bg-image--large--ratio-4-3" style="background-image: url('{{ site.baseurl }}/img/content/highlights/{{ highlight.class }}.jpg');"></div>
-        </div>
-
-        <div class="row__column modal__item__content">
-          <h2 class="title title--small title--upper title--display">{{ highlight.title }}</h2>
-          {% if highlight.location %}<p class="card__location">{{ highlight.location }}</p>{% endif %}
-          <hr />
-          <p>{{ highlight.content }}</p>
-        </div>
-
-      </div>
-      {% endfor %}
-
-      <!-- MODAL SLIDER NAVIGATION -->
-      <div class="modal__slider-nav">
-        <a class="modal__slider-previous" id="modal_slider--previous" href="javascript:void(0);">
-          <img class="js-svg-swap" width="20" src="{{ site.baseurl }}/img/icons/arrow-left-white.png" alt="<">
-        </a>
-        <a class="modal__slider-next" id="modal_slider--next" href="javascript:void(0);">
-          <img class="js-svg-swap" width="20" src="{{ site.baseurl }}/img/icons/arrow-right-white.png" alt=">">
-        </a>
-      </div>
-
-    </div>
-  </div>
-</div>
+{% include highlights/modal.html %}
