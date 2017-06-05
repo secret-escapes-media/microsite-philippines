@@ -23,19 +23,17 @@ section,.section {
     padding-bottom: 3.375em;
   }
 }
-@include bp(large) {
-  .section {
-    &--padding {
-      padding-top: 3.375em; padding-bottom: 3.375em;
-
-      &-xxlarge { padding-top: 8em; padding-bottom: 8em; }
-      &-xlarge { padding-top: 5.2em; padding-bottom: 5.2em; }
-      &-large { padding-top: 4.2em; padding-bottom: 4.2em; }
-      &-small { padding-top: 1.6em; padding-bottom: 1.6em; }
-      &-none { padding-top: 0; padding-bottom: 0; }
-    }
+.section--padding {
+  @include bp(large) {
+    padding-top: 3.375em; padding-bottom: 3.375em;
+    &-xxlarge { padding-top: 8em; padding-bottom: 8em; }
+    &-xlarge { padding-top: 5.2em; padding-bottom: 5.2em; }
+    &-large { padding-top: 4.2em; padding-bottom: 4.2em; }
+    &-small { padding-top: 1.6em; padding-bottom: 1.6em; }
   }
+  &-none { padding-top: 0; padding-bottom: 0; }
 }
+
 
 .row {
   @include container( $xxxxlarge );
@@ -48,6 +46,10 @@ section,.section {
   &--thin {
     position: relative;
     @include container( $xxxlarge );
+  }
+  &--xthin {
+    position: relative;
+    @include container( $xxlarge );
   }
 }
 
@@ -210,20 +212,11 @@ section,.section {
     }
     &__image {
       @include span(6);
-      min-height: 420px;
+      min-height: 550px;
     }
     &__text {
       @include span(6 last);
       padding: $margin*2;
-    }
-    &:nth-child(odd){
-      .harvey__image { @include span(6 last); }
-      .harvey__text { @include span(6); }
-      .flexbox & {
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-      }
     }
   }
 

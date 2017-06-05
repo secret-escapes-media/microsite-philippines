@@ -12,50 +12,51 @@
   location: Manila
   guide-class: luzon
   guide-section-class: central-luzon
-  content: Set on a deep bay with famed sunsets, the city has many Spanish-colonial landmarks, national memorials and monuments, a centuries-old Chinatown and a diversity of museums.
+  content: A bustling metropolis that typifies the hazy roar of Asian cities. Busy, frenetic, hot and electric, Manila may seem intimidating, but true cultural hounds will manage to seek out a thriving arts scene, a host of stellar restaurants, cafes, bars and karaoke, and plenty more. An underrated playground of burgeoning urban cool.
 
 - title: Intramuros
+  feature: true
   class: intramuros
   location: Manila
   guide-class: luzon
   guide-section-class: central-luzon
-  content: >
-    The oldest district and historic core of Manila, Philippines. Construction of defensive walls was started by the Spanish colonial govt in 16th C. One of the 12 worldwide sites "on the verge" of irreparable loss and destruction. Includes: Fort Santiago
+  content: The historic core of Manila is a marvel of 16th century Spanish architecture, with fierce military buildings and an imposing wall that surrounds the old city. Discover the impressive Fort Santiago or the oldest church in the Philippines, San Agustin, a marvel of ornate interior artwork and lofty, vaulted ceilings.
 
 - title: Abandoned Theme Park
+  feature: true
   class: abandoned-theme-park
   location: Manila
   guide-class: luzon
   guide-section-class: central-luzon
-  content:
+  content: A rather curious artefact high in the hills outside Manila makes for quirky photography and truly surreal sights. Often lauded to have been a Disneyland rival – a fact hard to imagine – this theme park was abandoned as the Japanese investor went bankrupt. Now, faux-medieval castles hawk over the countryside, whilst forgotten rides remain still in an eerie, borderline dystopian image.
 
 - title: Taal Volcano and Lake Hike
   class: taal-volcano-and-lake-hike
   location:
   guide-class: luzon
   guide-section-class: central-luzon
-  content:
+  content: Set within a vast lake is the peak of this mesmerising volcano. Well, many peaks and many craters, centring around ominous Taal – one of the most dangerous volcanoes in the world. Take a banca to the crater’s edge, and hike to the sulfurous lake that occupies the centre – the scene is beautiful, were it not for the impending danger that the crater poses.
 
 - title: Nagcarlan Underground Cemetery
   class: nagcarlan-underground-cemetery
   location:
   guide-class: luzon
   guide-section-class: central-luzon
-  content:
+  content: Enter through the crumbling 19th century gate into a large square tipped by a weathered church. On its flanks you’ll find walls studded with tombs, but the real treat lies below. The crypt was an important meeting place for Filipino patriots during the Filipino-American war and WWII. It's creepy, significant and downright eerie.
 
 - title: Minalungao National Park
   class: minalungao-national-park
   location:
   guide-class: luzon
   guide-section-class: central-luzon
-  content:
+  content: A breathtakingly beautiful area where rocky gorges drop to glimmering waters. Traditional bamboo rafts navigate visitors on the calm river, offering blissful swimming in awe-inspiring locations. Cliff diving and cave exploring is abundant. True nature lovers can consider camping out in this serene natural scene.
 
 - title: Zambales Coast
   class: zambales-coast
   location:
   guide-class: luzon
   guide-section-class: central-luzon
-  content:
+  content: This stunning coastline is the holiday spot for Manila city slickers, owing to its lengthy white-sand beaches and crystal clear waters. Throw in dramatic mountains that serve as a backdrop to the beach scene and you have a stellar spot for sun-lounging and beach exploits.
 
 ##========= NORTH LUZON : north-luzon =========
 
@@ -71,7 +72,7 @@
   location:
   guide-class: luzon
   guide-section-class: north-luzon
-  content: A time warp town of Spanish colonial charms that is effortlessly beautiful. Centred around pedestrianised Crisologo St, you’ll find a cobbled road lined with antique shops and cafes, as horse-drawn carts – known as Kalesa – trot and clap up and down. A surreal yet captivating scene, Vigan is a moment in Filipino history.
+  content: A time-warp town of Spanish colonial charms that is effortlessly beautiful. Centred around pedestrianised Crisologo St, you’ll find a cobbled road lined with antique shops and cafes, as horse-drawn carts – known as Kalesa – trot and clap up and down. A surreal yet captivating scene, Vigan is a moment in Filipino history.
 
 - title: Banaue Rice Terraces
   class: banaue-rice-terraces
@@ -88,27 +89,41 @@
   content: Deep in the Mountain Province lies this particularly eerie sight. The pre-colonial community has a burial tradition, whereby they nail coffins to the side of a cliff following days of vigil with the deceased. The reasons are numerous, including a fear of rotting in the ground and supposedly an old link to ancient head-hunting tribes. A morbidly-fascinating display set in stunning, mountainous Sagada.
 
 - title: Hundred Islands National Park
-  class:
+  class: hundred-islands-national-park
   location:
   guide-class: luzon
   guide-section-class: north-luzon
-  content:
+  content: Over one-hundred islets form a bay of island idylls, framed in azure waters and awash with darting bancas. Eroding limestone bases create a unique mushroom shape on most of the small islands, offering a unique backdrop to a sublime summer getaway.
 
 ##========= SOUTHEAST LUZON : southeast-luzon =========
 
-- title: Masbate Province
-  class: masbate-province
-  location: Manila
+- title: Naga
+  class: naga
+  location:
   guide-class: luzon
   guide-section-class: southeast-luzon
-  content:
+  content: The oldest university town in Bicol, Naga is alive with cafes, bars and restaurants. A buzzing nightlife caters to the youthful air of the town, and nearby, volcano hikes, scuba diving, wake boarding and more are available.
+
+- title: Masbate Province
+  class: masbate-province
+  location:
+  guide-class: luzon
+  guide-section-class: southeast-luzon
+  content: A rather wild part of the Philippines, Masbate Province is known for its ranching and slightly rough-around-the-edges vibe, hence the catchy moniker ‘The Wild East’. The annual rodeo in Masbate Port is a sight to behold. Alight for minimal infrastructure, wild jungles, and unspoilt scenery.
+
+- title: Manta Bowl
+  class: manta-bowl
+  location:
+  guide-class: luzon
+  guide-section-class: southeast-luzon
+  content: Just off the coast of Ticao island is this famed diving spot. Here you can sink deep into the waters and find a host of whale sharks and manta rays ready to glide over your head. It’s an advanced dive with strong currents, but these majestic creatures are abundant and a real treat to see.
 
 - title: Mount Mayon
   class: mount-mayon
-  location: Manila
+  location:
   guide-class: luzon
   guide-section-class: southeast-luzon
-  content:
+  content: Often described as the most perfect volcano, this remarkably symmetrical mountain juxtaposes its inherent beauty with the looming danger of its spewing peak. With countless recorded eruptions, even over the last decade, it’s a foreboding yet stunning scene.
 
 
 
@@ -127,7 +142,7 @@
   location: Palawan
   guide-class: palawan
   guide-section-class: palawan
-  content: Venture deep into the mysterious grandeur of Puerto Princesa’s underground cave network. Enter vast rock corridors, resplendent galleries and startling formations that plunge into dark pools. The best bit? See it all from a kayak, gliding along on eerily still waters. The underground river is an awe-inspiring sight.
+  content: Venture deep into the mysterious grandeur of Puerto Princesa’s underground cave network. Enter vast rock corridors, resplendent galleries and startling formations that plunge into dark pools. The best bit? See it all from a kayak, gliding along on eerily still waters. The underground river is awe inspiring, aptly inscribed by UNESCO as a World Heritage Site.
 
 - title: Honda Bay
   class: honda-bay
@@ -148,7 +163,7 @@
   location: Palawan
   guide-class: palawan
   guide-section-class: palawan
-  content: Walk the garden, filled with exotic Phillipino flowers, as a host of colourful butterflies glide and weave above your head. A beautiful scene, this small eco-centre does much to conserve the unique and colourful butterflies of the Philippines. If you’re lucky, you might see a young butterfly emerge from its cocoon, or instead be surprised by walking sticks and a scorpion.
+  content: Walk the garden, filled with exotic Phillipine flowers, as a host of colourful butterflies glide and weave above your head. A beautiful scene, this small eco-centre does much to conserve the unique and colourful butterflies of the Philippines. If you’re lucky, you might see a young butterfly emerge from its cocoon, or instead be surprised by walking sticks and a scorpion.
 
 - title: Tabon Caves
   class: tabon-caves
@@ -162,7 +177,7 @@
   location: Palawan
   guide-class: palawan
   guide-section-class: palawan
-  content: This isolated, indigenous, mountain-dwelling tribe offer a rare, anthropological treat. For intrepid explorers only, a few hours trek through centuries-old virgin forests reveals this age-old settlement. Wholly disconnected from the modern world, their way of life is a fascinating glimpse into an entirely foreign way of living. Be sure to make a donation of food, you’re pass into the village.
+  content: This isolated, indigenous, mountain-dwelling tribe offer a rare, anthropological treat. For intrepid explorers only, a few hours trek through centuries-old virgin forests reveals this age-old settlement. Wholly disconnected from the modern world, their way of life is a fascinating glimpse into an entirely foreign way of living. Be sure to make a donation of food, your pass into the village.
 
 ##========= EL NIDO : el-nido =========
 
@@ -192,7 +207,7 @@
   location: Palawan
   guide-class: palawan
   guide-section-class: el-nido
-  content: The Bacuit archipelago make up this astonishing marine reserve. What this means is that sharp-eyed snorkelers and divers will seen an astonishing and colourful array of wildlife, plus technicolor corals washed with schools of fish. It’s what makes El Nido such a paradise – make sure you explore all that’s available!
+  content: The Bacuit archipelago hosts this astonishing marine reserve. What this means is that sharp-eyed snorkelers and divers will see an astonishing and colourful array of wildlife, plus technicolor corals washed with schools of fish. It’s what makes El Nido such a paradise – make sure you explore all that’s available!
 
 ##========= CALAMIAN ISLANDS : calamian-islands =========
 
@@ -208,7 +223,7 @@
   location: Palawan
   guide-class: palawan
   guide-section-class: calamian-islands
-  content: With more shipwrecks to explore, shallow reefs for snorkelling, and spectacular underwater caves, this is another diver’s dream. Inland you’ll find a treasure of natural features; seven mountain lakes including the sublime Kayangan Lake (cleanest in all the Phillipines), the famed twin lagoons and underwater Barracuda Cave, and plenty more.
+  content: With more shipwrecks to explore, shallow reefs for snorkelling, and spectacular underwater caves, this is another diver’s dream. Inland you’ll find a treasure of natural features; seven mountain lakes including the sublime Kayangan Lake (cleanest in all the Philippines), the famed twin lagoons, and underwater Barracuda Cave – plus plenty more.
 
 - title: Calauit Island Safari
   class: calauit-island-safari
@@ -222,7 +237,7 @@
   location: Palawan
   guide-class: palawan
   guide-section-class: calamian-islands
-  content: Excellent snorkelling awaits at Dynamite Point, stunning beaches fringe the island, and all the usual magnificent FIlipino qualities shine through on this sun-drenched rock. However this island also harbours a startling history; in the early part of the 20th century it was one of the world’s largest leper colonies, a story told in the Culion archives. There’s also an 18th century Spanish fort that was converted into a church, plus hiking opportunities that offer sublime panorama.
+  content: Excellent snorkelling awaits at Dynamite Point, stunning beaches fringe the island, and all the usual magnificent Filipino qualities shine through on this sun-drenched rock. However this island also harbours a startling history; in the early part of the 20th century it was one of the world’s largest leper colonies, a story told in the Culion archives. There’s also an 18th century Spanish fort that was converted into a church, plus hiking opportunities that offer sublime panorama.
 
 
 
@@ -249,7 +264,7 @@
   location: Tibiao
   guide-class: visayas
   guide-section-class: panay
-  content: Relax in a cauldron of pot pourri heated by a roaring fire underneath. Yes, it sounds very much like you’ll be cooked for that evening’s meal, but in reality it’s a wholly relaxing experience in isolated rural splendour.
+  content: Relax in a cauldron of potpourri heated by a roaring fire underneath. Yes, it sounds very much like you’ll be cooked for that evening’s meal, but in reality it’s a wholly relaxing experience in isolated rural splendour.
 
 - title: Igbaclag Cave and the Stone Castle
   class: igbaclag-cave-and-the-stone-castle
@@ -291,13 +306,7 @@
   location: Turtle Island
   guide-class: visayas
   guide-section-class: panay
-  content: Head out to Turtle Island for, you guessed it, our little shell-back friends! This little island sanctuary offers a close glimpse at these marvellous creatures. Take a boat, pay the small fee which goes towards upkeep of the sanctuary and meet the shelled chums.
-
-- title: Boracay
-  class: boracay
-  location: Boracay Island
-  guide-class: visayas
-  content: This tiny spit of land above Panay has been a much-hyped island paradise, having come second in the draw of best island paradise in the world by Travel + Leisure readers, losing out to Palawan. That’s right, top two were both in the Philippines! The 4km stretch of White Beach is a dreamy idyll that constitutes the finest elements of the country – shallow turquoise waters, powder-white sands, banca boats gliding across the calm seas and endless shady palm trees. There’s a reason it’s such a massive tourist draw – astounding beauty lies at every glance.
+  content: Head out to Turtle Island for, you guessed it, our little shell-back friends! This little island sanctuary offers a close glimpse at these marvellous creatures. Take a boat and pay the small fee – which goes towards upkeep of the sanctuary – and meet the shelled chums.
 
 ##========= CEBU : cebu =========
 
@@ -306,21 +315,21 @@
   location:
   guide-class: visayas
   guide-section-class: cebu
-  content: Cebu is famed for a lasting reminder of Spanish influence – Lechon. The classic roast pig is found everywhere on the island, but locals contend for their favourite joints. From stalwarts like Rico’s and Alejo’s, revel in the fatty, salty, porky goodness.
+  content: Cebu is famed for a lasting reminder of Spanish influence – lechon. The classic roast pig is found everywhere on the island, but locals contend for their favourite joints. From stalwarts like Rico’s and Alejo’s, revel in the fatty, salty, porky goodness.
 
 - title: Basilica Minore del Santo Niño
   class: basilica-minore-del-santo-nino
-  location: Cebu
+  location: Cebu City
   guide-class: visayas
   guide-section-class: cebu
-  content: This grand church houses a Flemish statue of Jesus, revered by the people of Cebu, and purportedly dating to the time Magellan. The site was home to the oldest church in the Philippines, until that needed rebuilding in the 18th century. It has persistently been a victim of natural disasters, only adding to its mystique. The interior features splendid decoration.
+  content: This grand church houses a Flemish statue of Jesus, revered by the people of Cebu, and purportedly dating to the time of Magellan. The site was home to the oldest church in the Philippines, until that needed rebuilding in the 18th century. It has persistently been a victim of natural disasters, only adding to its mystique. The interior features splendid decoration.
 
 - title: Larsian Barbecue
   class: larsian-barbecue
   location: Cebu City
   guide-class: visayas
   guide-section-class: cebu
-  content: Tuck in at this great street food stop in Cebu City, where rows of stallholders offer barbecued meats to the delight of locals. You’ll find Cebu’s famous Lechon as well as a host of other chargrilled treats – a must for flavour-packed evenings and great atmosphere.
+  content: Tuck in at this great street food stop in Cebu City, where rows of stallholders offer barbecued meats to the delight of locals. You’ll find Cebu’s famous lechon as well as a host of other chargrilled treats – a must for flavour-packed evenings and great atmosphere.
 
 - title: Taoist Temple
   class: taoist-temple
@@ -350,7 +359,7 @@
   location: Bohol
   guide-class: visayas
   guide-section-class: bohol
-  content: Not to be confused with the Loboc sanctuary, which has come under criticism for unethical treatment of this endangered species, this Tarsier sanctuary in Canapnapan will steal your heart with fleeting glimpses at these wide-eyed wonders.
+  content: Not to be confused with the Loboc sanctuary, which has come under criticism for unethical treatment of the endangered species, this Tarsier sanctuary in Canapnapan will steal your heart with fleeting glimpses at these wide-eyed wonders.
 
 - title: Alona Beach
   class: alona-beach
@@ -364,7 +373,7 @@
   location: Bohol
   guide-class: visayas
   guide-section-class: bohol
-  content: Cruise along this picturesque river, lined by tropical forests. The quaint river boats tend to offer buffets packed with Filipino treats, making for blissful cruising in beautiful surroundings. Look out for rural like on the river banks, offering timewarp glimpses into traditional Filipino living.
+  content: Cruise along this picturesque river, lined by tropical forests. The quaint river boats tend to offer buffets packed with Filipino treats, making for blissful cruising in beautiful surroundings. Look out for rural life on the river banks, offering timewarp glimpses into traditional Filipino living.
 
 - title: Kayak Firefly Tour
   class: kayak-firefly-tour
@@ -380,21 +389,21 @@
   location: Negros Oriental
   guide-class: visayas
   guide-section-class: negros
-  content: This student town offers a buzzing, cosmopolitan vibe centred around an electric harbourfront packed with raucous bars and great restaurants. Far from the more provincial centres of Bacolod, Dumaguete is a forward-looking, upbeat and downright exciting place to hang out.
+  content: This student town offers a buzzing, cosmopolitan vibe centred around an electric harbourfront packed with raucous bars and great restaurants. Far from the more provincial centres of Bacolod, Dumaguete is a forward-looking, upbeat and downright exciting place to hang out. Dumaguete is also the gateway to world-class dive sites like Dauin and Apo Island.
 
 - title: Manokan Country
   class: manokan-country
   location: Negros
   guide-class: visayas
   guide-section-class: negros
-  content: This famed hawker centre delights locals with big Filipino bites in the heart of Bacolod City. Try Negro’s famous Chicken Inasal as well as plenty other barbecue treats, as you pull up a plastic chair amongst the bustling foodie stalls. Join office workers, families and students at the is cheap, delicious pit-stop.
+  content: This famed hawker centre delights locals with big Filipino bites in the heart of Bacolod City. Try Negro’s famous Chicken Inasal as well as plenty other barbecue treats, as you pull up a plastic chair amongst the bustling foodie stalls. Join office workers, families and students at this cheap, delicious pit-stop.
 
 - title: The Ruins
   class: the-ruins
   location: Negros Oriental
   guide-class: visayas
   guide-section-class: negros
-  content: This enchanting place is the former home of sugar baron Don Mariano Ledesma Lacson, with Italianate stylings romantically juxtaposed against the tropical surroundings. The mansion was burnt down during the second world war to stop it becoming headquarters for the Japanese. Walk the moody gardens with the looming ruinous grandeur of the mansion dominating the space.
+  content: This enchanting place is the former home of sugar baron Don Mariano Ledesma Lacson, with Italianate stylings romantically juxtaposed against the tropical surroundings. The mansion was burned down during WWII to stop it becoming headquarters for the Japanese. Walk the moody gardens with the looming ruinous grandeur of the mansion dominating the space.
 
 - title: Danjugan Island
   class: danjugan-island
