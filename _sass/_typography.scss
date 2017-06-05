@@ -140,15 +140,13 @@ dl {
       &:after { content: none; }
     }
 
-    @include bp(large){
-      .flexbox & {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        li {
-          flex-grow: 1;
-          a { width: 100%; display: inline-block; }
-        }
+    .flexbox & {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      li {
+        flex-grow: 1;
+        a { width: 100%; display: inline-block; }
       }
     }
 

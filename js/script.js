@@ -73,15 +73,10 @@ modalLaunchBtn.click(function(){
 
   var targetModal = $(this).attr('data-modal');
   var modalItem = $(this).attr('data-modal-item');
-  var modalVideoURL = $(this).attr('data-modal-video');
 
   if(modalItem){
     $('.modal__item').addClass('modal__item-inactive');
     $('#modal__item-' + modalItem ).removeClass('modal__item-inactive');
-  }
-
-  if(modalVideoURL){
-    $('#modal-iframe' ).attr('src',modalVideoURL);
   }
 
   // disable scrolling on background content (doesn't work iOS)
@@ -102,7 +97,6 @@ function modalClose(event){
   $('body').removeClass('disable-scroll');
   // close modal with fade
   modal.fadeOut('250', function(){
-    $('#modal-iframe' ).attr('src','');
     $(this).removeClass('is-open').addClass('is-closed');
   });
 }

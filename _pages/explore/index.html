@@ -1,7 +1,6 @@
 ---
 
 layout: basic
-parent: true
 title: Explore
 class: explore
 nav-order: 2
@@ -10,9 +9,10 @@ banner-title: Explore
 banner-subtitle: The Philippines
 
 intro: >
-  <p class="p--lead">Discover the wonders of the Philippines in our guides to the finest destinations this paradise has to offer…</p>
+  <p class="p--lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
 ---
+
 
 
 
@@ -20,12 +20,13 @@ intro: >
 
 
 
+
 <section class="bg--white">
 
   <div class="row row--padding guides__row">
-    {% assign guides = site.html_pages | where: 'layout', 'guide' | sort:'guide-order' %}
+    {% assign guides = site.html_pages | where: 'layout', 'guide' %}
     {% for guide in guides %}
-      {% include guides/normal.html %}
+      {% include guide.html %}
     {% endfor %}
   </div>
 
@@ -36,15 +37,19 @@ intro: >
 <section>
 
   <div class="row row--padding align-center">
-    <h2 class="title title--small title--upper title--light title--expanded">Top Philippines Highlights</h2>
-    <hr class="hr--center hr--margin">
+    <h2 class="title title--medium title--upper title--expanded title--display">Top Philippines Highlights</h2>
+    <p class="p--lead">Some of our favourite things to see and do, not to be missed on a trip to the Philippines!</p>
   </div>
 
   <div class="row row--padding row--columns-4-4-4-gutters">
 
     {% assign highlights = site.data.highlights | where: 'feature', 'true' %}
     {% for highlight in highlights %}
-      {% include highlights/normal.html %}
+      {% if forloop.index == 1 or forloop.index == 2 or forloop.index == 3 %}
+        {% include highlight.html %}
+      {% else %}
+        {% include highlight.html class="small" %}
+      {% endif %}
     {% endfor %}
 
   </div>
@@ -53,4 +58,39 @@ intro: >
 
 
 
-{% include highlights/modal.html %}
+
+<div class="js-modal modal modal--vertical-align is-closed" id="modal-highlights">
+  <div class="modal__wrap row row--padding">
+    <div class="modal__content" id="modal__slider">
+
+      {% for highlight in site.data.highlights %}
+      <div class="slide modal__item modal__item-inactive row row--columns-6-6 row--columns-vertical-align" id="modal__item-{{ highlight.class }}">
+
+        <div class="row__column">
+          <div class="js-close-modal modal__close"></div>
+          <div class="bg-image bg-image--ratio-16-9 bg-image--large--ratio-4-3" style="background-image: url('{{ site.baseurl }}/img/content/highlights/{{ highlight.class }}.jpg');"></div>
+        </div>
+
+        <div class="row__column modal__item__content">
+          <h2 class="title title--small title--upper title--display">{{ highlight.title }}</h2>
+          <p class="card__location">{{ highlight.location }}</p>
+          <hr />
+          <p>{{ highlight.content }}</p>
+        </div>
+
+      </div>
+      {% endfor %}
+
+      <!-- MODAL SLIDER NAVIGATION -->
+      <div class="modal__slider-nav">
+        <a class="modal__slider-previous" id="modal_slider--previous" href="javascript:void(0);">
+          <img class="js-svg-swap" width="20" src="{{ site.baseurl }}/img/icons/arrow-left-white.png" alt="<">
+        </a>
+        <a class="modal__slider-next" id="modal_slider--next" href="javascript:void(0);">
+          <img class="js-svg-swap" width="20" src="{{ site.baseurl }}/img/icons/arrow-right-white.png" alt=">">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>

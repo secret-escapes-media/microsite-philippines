@@ -1,8 +1,1 @@
-<!-- SITE NAV -->
-<div class="site-nav">
-  <div class="row row--padding">
-    <ul class="site-nav__list">
-      {% assign site-sections = site.html_pages | sort:"nav-order" %}{% for section in site-sections %}{% if section.nav-order %}<li class="site-nav__item site-nav__item--{{ section.title | slugify }}{% if section.class == page.class %} is-current{% endif %}"><a class="site-nav__link" href="{{ site.baseurl }}{{ section.url }}">{{section.title}}</a></li>{% endif %}{% endfor %}
-    </ul>
-  </div><!-- END - .row -->
-</div><!-- END - .site-nav -->
+{% assign nav-order = site.pages | sort:"nav-order" %}{% for page in nav-order %}{% if page.nav-order %}<li class="{{include.block}}__item"><a class="{{include.block}}__link {{include.block}}__link--{{ page.title | slugify }}" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
