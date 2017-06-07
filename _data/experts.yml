@@ -6,8 +6,8 @@
   - title: Jefferson Bryan Manangquil
     class: jefferson-bryan-manangquil
     content: >
-      <p class="p--lead">Donec ullamcorper nulla non metus auctor fringilla.</p>
-      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla.</p>
+      <p class="p--lead">Jefferson Bryan Manangquil is a passionate traveller based in Melbourne. </p>
+      <p>Having traversed 35 countries spanning five continents, he’s well versed in unpicking enigmatic destinations and documenting his travels with his filming. Originally from General Santos City, he returned to the Philippines to explore his homeland...</p>
 
     questions:
 
@@ -34,18 +34,6 @@
 
   - title: Expert 2 Name
     class: expert-2-name
-    content: >
-      <p class="p--lead">Donec ullamcorper nulla non metus auctor fringilla.</p>
-      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla.</p>
-
-
-
-##  =========================
-##  Expert 3
-##  =========================
-
-  - title: Expert 3 Name
-    class: expert-3-name
     content: >
       <p class="p--lead">Donec ullamcorper nulla non metus auctor fringilla.</p>
       <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla.</p>

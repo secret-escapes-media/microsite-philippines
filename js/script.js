@@ -201,7 +201,7 @@ function bannerfade(){
 	var wh = $(window).height();
 
 	$('.title-banner__overlay').css({
-    "opacity": st / wh + 0.25
+    "opacity": st / (wh*1.2) + 0.25
 	});
 
 }
