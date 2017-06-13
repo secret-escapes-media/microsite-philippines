@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: $z-overlay;
+  z-index: $z-modal;
   background-color: $black;
   background-color: $black-66;
   cursor: pointer;
@@ -21,6 +21,18 @@
         display: table-cell;
         vertical-align: middle;
       }
+
+      .flexbox & {
+        &__wrap {
+          display: flex;
+          align-items: center;
+        }
+        &__content {
+          display: block;
+          height: auto;
+        }
+      }
+
       &__item {
         &-inactive {
           display: none;
@@ -30,40 +42,46 @@
   }
 
   &__wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     cursor: auto;
     margin-top: 0 !important;
     width: 100%;
     height: 100%;
+    .csstransforms.csstransforms3d & {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
 
   &__content {
     height: 100%;
     width: 100%;
     position: relative;
-    padding: $margin/2;
-    @include bp(large) {
-      padding: 0;
-    }
   }
   &__item {
     position: relative;
     background-color: #fff;
-    margin: 2em auto;
+    margin: 1em auto;
     box-shadow: 0 0 20px 0px $black-5;
     border-radius: 5px;
     overflow: hidden;
     display: block;
+    @include bp(large) {
+      margin: 2em auto;
+    }
+
     .flexbox & {
       display: block;
       @include bp(large) {
         display: flex;
       }
     }
+    .flexbox &-column {
+      flex-direction: column;
+    }
+
     &-inactive { display: none !important; }
     &__content {
       padding: 0 1.5em 1.5em;
@@ -128,13 +146,17 @@
   text-align: center;
   overflow: hidden;
   float: left;
-  position: absolute;
-  top: 50%; transform: translateY(-50%);
   font-size: 30px;
   font-weight: 800;
   color: white;
   line-height: 50px;
-
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  .csstransforms.csstransforms3d & {
+    margin-top: auto;
+    transform: translateY(-50%);
+  }
   display: none;
   @include bp(large) {
     display: block;

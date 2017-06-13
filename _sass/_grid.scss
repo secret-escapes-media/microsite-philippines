@@ -60,6 +60,14 @@ section,.section {
     padding-left: $margin;
     padding-right: $margin;
   }
+  &-vertical {
+    padding-top: ( $margin / 2 );
+    padding-bottom: ( $margin / 2 );
+    @include bp(medium) {
+      padding-top: $margin;
+      padding-bottom: $margin;
+    }
+  }
 }
 .row--margin {
   margin-left: ( $margin / 2 );

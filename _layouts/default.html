@@ -9,7 +9,11 @@
 
     {% include header.html %}
 
-    {% include title-banner.html %}
+    {% if page.class == 'overview' %}
+      {% include animating-title-banner.html %}
+    {% else %}
+      {% include title-banner.html %}
+    {% endif %}
 
     {{ content }}
 

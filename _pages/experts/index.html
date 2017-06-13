@@ -19,45 +19,45 @@ intro: >
 
 <section class="section--padding-large">
 
-  {% for expert in site.data.experts %}
-  <div class="row row--columns-6-6 expert" id="expert-{{expert.class}}">
+  <div class="row row--padding">
 
-    <div class="expert__summary">
+    {% for expert in site.data.experts %}
+    <div class="row row--columns-6-6 expert" id="expert-{{expert.class}}">
 
-      <div class="row__column expert__summary-content align-center">
-        <h2 class="title title--small title--display">{{ expert.title }}</h2>
-        <hr class="hr--center hr--margin">
-        {{ expert.content }}
+      <div class="row expert__summary">
+
+        <a href="#expert-{{expert.class}}" class="row__column expert__summary-image bg-image bg-image--ratio bg-image--ratio-16-9 bg-image--large--ratio-1-1 bg-image--xxlarge--ratio-4-3 fold__trigger" data-target="expert-{{expert.class}}-interview" style="background-image: url('{{ site.baseurl }}/img/content/experts/{{ expert.class }}.jpg');">
+          <div class="expert__summary-image-profile bg-image--shadow bg-image--border bg-image bg-image--ratio bg-image--ratio-1-1" style="background-image: url('{{ site.baseurl }}/img/content/experts/{{ expert.class }}-profile.jpg');"></div>
+        </a>
+
+        <div class="row__column expert__summary-content">
+          <h2 class="title title--medium title--display">{{ expert.title }}</h2>
+          {{ expert.content }}
+        </div>
+
       </div>
 
-      <div class="row__column expert__summary-image bg-image bg-image--ratio bg-image--ratio-4-3" style="background-image: url('{{ site.baseurl }}/img/content/experts/{{ expert.class }}.jpg');">
-        <div class="expert__summary-image-profile bg-image--shadow bg-image--border bg-image bg-image--ratio bg-image--ratio-1-1" style="background-image: url('{{ site.baseurl }}/img/content/experts/{{ expert.class }}-profile.jpg');"></div>
-      </div>
-
-    </div>
-
-    <div class="fold-container" id="expert-{{expert.class}}-interview">
-      <a href="#expert-{{expert.class}}" class="btn btn--solid fold__btn" data-target="expert-{{expert.class}}-interview" data-label="Read interview" data-alt-label="Hide interview">Read interview</a>
-
-      <div class="row row--columns-6-6-gutters fold expert__interview bg--pattern">
-        <div class="row__column">
-        {% for question in expert.questions %}
-          {% assign half = forloop.length | divided_by:2.0 | ceil %}
-          <h3 class="title title--micro title--bolder title--extra-margin">{{question.question}}</h3>
-          <p>{{question.answer}}</p>
-          {% if forloop.index == half %}
-          </div>
+      <div class="fold-container bg--pattern" id="expert-{{expert.class}}-interview">
+        <a href="#expert-{{expert.class}}" class="btn btn--solid fold__btn" data-target="expert-{{expert.class}}-interview" data-label="Read interview" data-alt-label="Hide interview">Read interview</a>
+        <div class="row row--columns-6-6-gutters fold expert__interview">
           <div class="row__column">
-          {% endif %}
-        {% endfor %}
+          {% for question in expert.questions %}
+            {% assign half = forloop.length | divided_by:2.0 | ceil %}
+            <h3 class="title title--micro title--bolder title--extra-margin">{{question.question}}</h3>
+            <p>{{question.answer}}</p>
+            {% if forloop.index == half %}
+            </div>
+            <div class="row__column">
+            {% endif %}
+          {% endfor %}
+          </div>
         </div>
       </div>
 
     </div>
 
+    {% endfor %}
   </div>
-
-  {% endfor %}
 
 </section>
 

@@ -1,9 +1,8 @@
-<section class="title-banner" style="background-image: url({{site.baseurl}}/img/bg/banner-{{ page.class }}.jpg);">
+
+<section class="title-banner js-fading-backgrounds">
+
   <div class="title-banner__wrap">
-    <div class="title-banner__content row row--padding invert-text align-center">
-
-
-
+    <div class="title-banner__content invert-text align-center">
       {% if page.banner-supertitle %}
         <p class="title-banner__suptitle title title--smaller title--upper title--expanded title--margin-none title--display">{{ page.banner-supertitle }}</p>
       {% endif %}
@@ -16,10 +15,14 @@
         <p class="title-banner__subtitle title title--smaller title--upper title--expanded title--display">{{ page.banner-subtitle }}</p>
       {% endif %}
 
-
-
     </div>
   </div>
+
   <div class="title-banner__overlay"></div>
+
+  <div class="title-banner__bg js-fading-background" style="background-image: url({{site.baseurl}}/img/bg/banner-overview/01.jpg);"></div>
+  <div class="title-banner__bg js-fading-background" style="background-image: url({{site.baseurl}}/img/bg/banner-overview/02.jpg);"></div>
+  <div class="title-banner__bg js-fading-background" style="background-image: url({{site.baseurl}}/img/bg/banner-overview/03.jpg);"></div>
+
 </section>
 {% include navigation/microsite-nav.html %}

@@ -1,13 +1,48 @@
 
 ##  =========================
+##  Jason Atherton
+##  =========================
+
+  - title: Jason Atherton
+    class: jason-atherton
+    content: >
+      <p>From looking after the donkeys on Skegness beach to working with renowned chefs including Pierre Koffmann, Marco Pierre White, Nico Ladenis and Ferran Adria, and Gordon Ramsey, Jason Atherton has built a restaurant network that spans the globe. From London to Hong Kong, his new restaurant on the island of Cebu has piqued our interests...</p>
+
+    questions:
+
+      - question: Your restaurants now span the globe – what was it about the Philippines that made you think, I have to open a restaurant here? What was it about Cebu particularly?
+        answer: >
+          <p>The Philippines hold a very special place in my heart because it’s the home country of my wife and co-director, Irha. We travel to Irha’s hometown of Cebu every year to visit family, and it was always a dream of hers to be able to open a restaurant there and share some of the success we have been lucky to achieve elsewhere in the world. In a way, The Pig & Palm is my love letter to Irha. </p>
+
+      - question: How heavily have you relied on, borrowed, and been influenced by Filipino culture, and most importantly, cooking?
+        answer: >
+          <p>The classic Filipino dish of adobo is a real family favourite of ours - Irha grew up on it, and our two girls are now doing the same. I’m a big fan of the convivial, family-focused culture of eating that The Philippines encourages - I love the tradition of all the family sitting down every Sunday to share some lechon de leche. It really feeds into my own ‘social’ values of sharing that I try to achieve in all my restaurants.</p>
+
+      - question: On the rare days you get downtime when in the Philippines, where would one find you?
+        answer: >
+          <p>There are so many beautiful beaches in Cebu, so perhaps we’d take a trip to Bantayan Island – it has idyllic white sand beaches and crystal clear blue water and is really secluded.</p>
+
+      - question: What, in your mind, makes Filipino food unique amongst the other cuisines in southeast Asia?
+        answer: >
+          <p>Filipino food is fascinating because it has such a rich and varied colonial history - Spain ruled the Philippines for 333 years so many dishes have a huge Spanish influence. You’ll also find Chinese and Malay elements, as well as even some American influences.</p>
+
+      - question: The Philippines offers some great street food and regional delicacies, what would you personally recommend to travellers to try?
+        answer: >
+          <p>In terms of street food, if you’re feeling brave – try a balut, which is a fertilised duck egg. Not for the faint hearted! I would also recommend ngohiong, Cebu’s version of a spring roll. But above all, it has to be Lechon de Leche (suckling pig) – Cebu is famous for it. The best place to try it is in the province of Carcar, but we’ve also done a delicious version of it for our own restaurant The Pig & Palm with soya onion gravy, apple and mustard leaf. You should also make sure to try adobo, a classic Filipino dish with chicken and pork, and kinilaw, which is their version of ceviche.</p>
+
+      - question: As for the wider region, what, in your mind, are unmissable things to do and try when visiting the Philippines?
+        answer: >
+          <p>Go whale shark watching in Oslob, on the south west coast of Cebu – whale sharks are the largest fish in the world and swimming alongside them in crystal clear waters is a truly unique experience. You should also check out the incredibly beautiful Kawasan Falls waterfalls in Badian, Cebu. Palawan is the best spot for diving in the world, and Boracay Island is also a stunning destination. In terms of resorts, I’d really recommend Kandaya and also Dedon Island.</p>
+
+
+##  =========================
 ##  Jefferson Bryan Manangquil
 ##  =========================
 
   - title: Jefferson Bryan Manangquil
     class: jefferson-bryan-manangquil
     content: >
-      <p class="p--lead">Jefferson Bryan Manangquil is a passionate traveller based in Melbourne. </p>
-      <p>Having traversed 35 countries spanning five continents, he’s well versed in unpicking enigmatic destinations and documenting his travels with his filming. Originally from General Santos City, he returned to the Philippines to explore his homeland...</p>
+      <p>Jefferson Bryan Manangquil is a passionate traveller based in Melbourne. Having traversed 35 countries spanning five continents, he’s well versed in unpicking enigmatic destinations and documenting his travels with his filming. Originally from General Santos City, he returned to the Philippines to explore his homeland...</p>
 
     questions:
 
@@ -16,25 +51,17 @@
           <p>This question naturally became an El Nido-versus-Coron argument, both of which are situated in Palawan – voted best island in the world by Conde Naste Traveller. If I had to choose between the two, I would go with Coron. This paradise is absolutely jaw dropping. While the island is blessed with perfect white beaches, what distinguishes it from El Nido is Coron’s charming lakes. The popular Kayangan lake couldn’t be more picturesque from a vantage point accessible through a 15-minute steep hike up.</p>
           <p>If you are into scuba diving, then Coron will surely give you a unique experience diving through WW2 Japanese shipwrecks, inhabited by a rich marine life of colourful corals and thick schools of fishes around—it’s amazing to see! I also found Coron less crowded than El Nido, if you’re after a bit of serenity.</p>
 
+      - question: What do you think makes the Philippines unique?
+        answer: >
+          <p>When people claim their country hosts the most welcoming people in the world, it is always a bit of a cliché. In the case of the Philippines, it’s actually true! Filipinos are rightly proud of their country and love showing visitors everything it has to offer. Be it their traditions, cuisine, or way of living, the locals will always encourage you to indulge in their culture and make you feel at home. There are many beautiful countries in the world, but few that also have such wonderful people.</p>
+
       - question: Did you discover any hidden gems that people should know about?
         answer: >
           <p>There are a lot! Sagada, Mountain Province was such a precious visit. It is famous for its beautiful caves, hanging coffins, as well as the serene mountains. What surprised me though is its cool, trendy and artsy cafes which you wouldn’t expect given how native or natural the place is.</p>
           <p>The second strongest volcanic eruption in history, Pinatubo, has formed a breathtaking crater lake. Before you get to see this gem, you need to get on a mandatory 4x4 drive to the jump-off point. This is followed by a two-hour trek which involves traversing through canyons created by the ash that fell from Mt Pinatubo, and crossing streams of cold, raging water.</p>
           <p>Try adrenaline-pumping action in Cebu's hidden canyons. To get to the crystal waters of Kawasan Falls, you are expected to ‘canyoneer’ for 2.5 hours, which includes 5+ thrilling cliff jumps and a couple of natural slides!</p>
 
-      - question: What do you think makes the Philippines unique?
+      - question: We can tell from your video that you’re a keen adventurer! What was the most daring thing you did?
         answer: >
-          <p>When people claim their country hosts the most welcoming people in the world, it is always a bit of a cliché. In the case of the Philippines, it’s actually true! Filipinos are rightly proud of their country and love showing visitors everything it has to offer. Be it their traditions, cuisine, or way of living, the locals will always encourage you to indulge in their culture and make you feel at home. There are many beautiful countries in the world, but few that also have such wonderful people.</p>
-
-
-
-##  =========================
-##  Expert 2
-##  =========================
-
-  - title: Expert 2 Name
-    class: expert-2-name
-    content: >
-      <p class="p--lead">Donec ullamcorper nulla non metus auctor fringilla.</p>
-      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>The most daring experience of this trip was jumping off 65ft cliffs into the base of the second Kawasan waterfall. Our tour guide warned us that several adventure seekers had severely injured themselves from cliff jumping. Tales are told every year, explained in a rather odd way – a life being claimed by the enchantress as an offering to nature! Hearing this story really played with my head and made the jump psychologically daring too!</p>
 

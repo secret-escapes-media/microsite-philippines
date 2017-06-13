@@ -1,11 +1,14 @@
 <footer class="footer">
-  {% include site-navigation.html %}
+  {% include navigation/site-navigation.html %}
   <div class="row row--padding">
     <div class="footer__logos align-center">
       <a class="logo logo--secret-escapes" href="https://www.secretescapes.com/"><img class="js-svg-swap" src="{{ site.baseurl }}/img/logo/secret-escapes.png" alt="Secret Escapes logo"></a>
       {% include partner-logo.html %}
-      <p>© Copyright <span class="js-year">2017</span> Secret Escapes</p>
+      <p>
+        © Copyright <span class="js-year">2017</span> Secret Escapes. <a class="js-open-modal" data-modal="terms-and-conditions" href="javascript:void(0);">Terms and conditions apply.</a>
+      </p>
     </div>
   </div>
 </footer>
 
+{% include modals/modal-t-and-c.html %}

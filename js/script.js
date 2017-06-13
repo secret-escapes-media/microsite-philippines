@@ -215,21 +215,14 @@ $(document).scroll(function() {
 //       Reveal Highlights
 ///////////////////////////////////////
 
-$('.highlights--tease').each(function(){
-  var highlightsHeight = $(this).height();
-  $(this).attr("data-height", highlightsHeight);
-  $(this).addClass("highlights--hide");
+$('.highlights--hide').each(function(){
+  $(this).slideUp();
 });
 
 $('.highlights__btn').click(function(){
-  var target = $(this).prev();
-  var highlightsHeight = target.attr('data-height');
-
+  var target = $(this).attr('data-target');
   $(this).fadeOut(); // hide btn
-
-  target.animate({'height': highlightsHeight + 'px'},500);
-  target.removeClass('highlights--hide');
-
+  $('#' + target).slideDown().removeClass('.highlights--hide');
 });
 
 
@@ -238,26 +231,36 @@ $('.highlights__btn').click(function(){
 ///////////////////////////////////////
 
 $('.fold').each(function(){
-  var foldHeight = $(this).height();
   $(this).slideUp();
 });
 
-$('.fold__btn').click(function(){
-
-  var label = $(this).attr('data-label');
-  var altLabel = $(this).attr('data-alt-label');
-
-  var target = $(this).attr('data-target');
+function fold(target,label,altLabel){
   var targetFold = $('#' + target).find('.fold');
+  var btn = $('#' + target).find('.fold__btn');;
 
   if(targetFold.hasClass('fold-open')){
     targetFold.slideUp().removeClass('fold-open');
-    $(this).html(label);
+    if(label){ btn.html(label); }
   }else{
     targetFold.slideDown().addClass('fold-open');
-    $(this).html(altLabel);
+    if(altLabel){ btn.html(altLabel); }
   }
 
+}
+
+$('.fold__btn').click(function(){
+
+  var target = $(this).attr('data-target');
+  var label = $(this).attr('data-label');
+  var altLabel = $(this).attr('data-alt-label');
+
+  fold(target,label,altLabel);
+
+});
+
+$('.fold__trigger').click(function(){
+  var target = $(this).attr('data-target');
+  fold(target);
 });
 
 
@@ -287,41 +290,26 @@ if( $('body').hasClass('guide') ){
 
 
 ///////////////////////////////////////
-//       Weather
+//           Image slider
 ///////////////////////////////////////
 
-$(document).ready(function() {
-  $.simpleWeather({
-    woeid: '1199477',
-    unit: 'c',
-    success: function(weather) {
-      var html = weather.temp+'&deg;'+weather.units.temp;
+var backgrounds    = $('.js-fading-background'),
+    counter        = 0,
+    slideTime      = 5000,
+    transitionTime = 1000;
 
-      $("#weather").html(html);
-    },
-    error: function(error) {
-      $("#weather").html(error);
-    }
-  });
-});
+// hide all but first
+$(backgrounds).hide();
+$(backgrounds[0]).show();
 
-
-///////////////////////////////////////
-//       Time
-///////////////////////////////////////
-
-function calcTime(city, offset) {
-  var d = new Date();
-  var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-  var nd = new Date(utc + (3600000*offset));
-  var timeString = nd.getHours() + ":" + nd.getMinutes();
-  return timeString;
-}
-
-$(document).ready(function() {
-  var time = calcTime('Manila', '+8');
-  $('#time').html(time);
-});
+setInterval(function() {
+  $(backgrounds[counter]).fadeOut(transitionTime);
+  counter++;
+  if (counter === backgrounds.length) {
+    counter = 0;
+  }
+  $(backgrounds[counter]).fadeIn(transitionTime);
+}, slideTime);
 
 
 

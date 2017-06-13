@@ -62,7 +62,7 @@ body { background-color: $light-grey; }
 
   &--pattern { background-image: url('../img/bg/bg-pattern.png'); }
 
-  &--waves { background-image: url('../img/bg/wave-white50.png'); background-attachment: fixed; }
+  &--waves { background-image: url('../img/bg/wave-white30.png'); background-attachment: fixed; }
   &--waves-10 { background-image: url('../img/bg/wave-white10.png'); background-attachment: fixed; }
   &--waves-dark { background-image: url('../img/bg/wave-black30.png'); background-attachment: fixed; }
   &--waves-dark-05 { background-image: url('../img/bg/wave-black05.png'); background-attachment: fixed; }
@@ -115,7 +115,7 @@ body { background-color: $light-grey; }
 
       &.stuck {
         position: fixed; top: 0; bottom: auto;
-        z-index: 100;
+        z-index: $z-overlay-upper;
         box-shadow: 0 0 5px 0 rgba($black, 0.2);
       }
     }
@@ -131,39 +131,43 @@ body { background-color: $light-grey; }
 // -- Highlight slider :: show/hide extra highlights ---
 
 .highlights {
-  overflow: hidden;
   position: relative;
-  &--hide {
-    margin-bottom: -20px;
-    height: 320px;
-    &:after {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      bottom: 0; left: 0; right: 0;
-      height: 60px;
-      background-image: url('../img/icons/highlights-fade.png');
-      background-position: bottom;
-      background-repeat: repeat-x;
-    }
-    .bg--light-grey &:after { background-image: url('../img/icons/highlights-fade-light-grey.png'); }
-    .bg--grey &:after { background-image: url('../img/icons/highlights-fade-grey.png'); }
+  overflow: hidden;
+  & .row__column { margin-bottom: 1.5em; }
+  &__btn {
+    position: relative; z-index: 10;
   }
-  &__btn { position: relative; z-index: 10; }
 }
 
 // ---------- folding sections ----------
 
 .fold {
-  &-container { position: relative; padding: 2px 0; }
+  &-container {
+    position: relative;
+    padding: 2px 0;
+  }
   &__btn {
     position: absolute;
     z-index: 10;
     bottom: -15px;
+    width: 80%;
     left: 50%;
-    transform: translateX(-50%);
+    margin-left: -180px;
+    .csstransforms.csstransforms3d & {
+      margin-left: auto;
+      transform: translateX(-50%);
+    }
+    @include bp(large){
+      width: auto;
+    }
   }
+
+  &-open {
+    padding-bottom: 4em;
+  }
+
 }
+#travel-details { margin-top: 1em; }
 
 
 /* ===============================================
@@ -212,24 +216,35 @@ body { background-color: $light-grey; }
 
   &__summary {
     background-color: $white;
-    display: flex;
     align-items: center;
     border-radius: 3px;
+    @include bp(large){
+      text-align: center;
+      display: flex;
+    }
     &-image {
       &-profile {
-        box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+        box-shadow: 0 0 8px 0 rgba(0,0,0,0.4);
         position: absolute !important;
         left: -1em; top: -1em;
-        width: 140px;
+        min-width: 100px;
+        width: 30%
       }
-      border-radius: 0 3px 3px 0;
+      border-radius: 3px 0 0 3px;
     }
-    &-content { padding: $margin; }
+    &-content {
+      padding: 0.5em 1em 2em;
+      @include bp(large){
+        padding: 2em;
+      }
+    }
   }
 
-
   &__interview {
-    padding: $margin;
+    padding: 0.5em 1em 1.5em;
+    @include bp(large){
+      padding: 1em 2em 2em;
+    }
   }
 }
 
