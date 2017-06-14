@@ -313,6 +313,44 @@ setInterval(function() {
 
 
 
+///////////////////////////////////////
+//       Weather
+///////////////////////////////////////
+
+$(document).ready(function() {
+  $.simpleWeather({
+    woeid: '1199477',
+    unit: 'c',
+    success: function(weather) {
+      var html = weather.temp+'&deg;'+weather.units.temp;
+
+      $("#weather").html(html);
+    },
+    error: function(error) {
+      $("#weather").html(error);
+    }
+  });
+});
+
+
+///////////////////////////////////////
+//       Time
+///////////////////////////////////////
+
+function calcTime(city, offset) {
+  var d = new Date();
+  var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+  var nd = new Date(utc + (3600000*offset));
+  var timeString = nd.getHours() + ":" + nd.getMinutes();
+  return timeString;
+}
+
+$(document).ready(function() {
+  var time = calcTime('Manila', '+8');
+  $('#time').html(time);
+});
+
+
 
 ///////////////////////////////////////////////////////////////////////////////
 });})(jQuery, this); // on ready end
