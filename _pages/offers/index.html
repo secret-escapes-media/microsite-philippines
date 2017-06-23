@@ -20,7 +20,7 @@ intro: >
   <div class="row row--padding">
     {% assign offers = site.data.offers | sort: 'saved' | reverse %}
     {% for offer in offers %}
-      {% include offers/small.html %}
+      {% include offers/normal.html %}
     {% endfor %}
   </div>
 </section>
