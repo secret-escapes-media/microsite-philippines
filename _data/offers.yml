@@ -1,21 +1,3 @@
-  #
-  # - title: Hong Kong & Philippines holiday
-  #   category: visayas
-  #   location: Amorita Resort, Bohol, Philippines
-  #   description: A Hong Kong landing pad and Philippines island idyll, with travel and perks
-  #   price: 1539
-  #   price-description: per person for 9 nights
-  #   saved: 25
-  #   link: https://www.secretescapes.com/hong-kong-and-philippines-holiday-island-pacific-hong-kong-and-amorita-resort-bohol/sale?utm_source=SE&utm_medium=Hub&utm_campaign=Philippines_130617
-  #
-  # - title: Relaxing Singapore & Bohol city-to-beach holiday
-  #   category: visayas
-  #   location: Amorita Resort, Bohol, Philippines
-  #   description: A Singapore and Bohol break, combining luxurious city and beach stays, with all travel
-  #   price: 1219
-  #   price-description: per person for 9 nights
-  #   saved: 25
-  #   link: https://www.secretescapes.com/relaxing-singapore-and-bohol-city-to-beach-holiday-m-social-singapore-and-amorita-resort-philippines/sale?utm_source=SE&utm_medium=Hub&utm_campaign=Philippines_130617
 
   - title: The Lind Boracay
     category: palawan
@@ -25,3 +7,30 @@
     price-description: per room per night
     saved: 52
     link: https://www.secretescapes.com/the-lind-boracay-boracay-philippines/sale?utm_source=SE&utm_medium=Hub&utm_campaign=Philippines_130617
+
+  - title: El Nido Resorts Miniloc Island
+    category: palawan
+    location: Miniloc Island, El Nido
+    description: Castaway-chic cottages in an eco-luxe resort with full board, transfers and more
+    price: 243
+    price-description: per room per night
+    saved: 32
+    link: https://www.secretescapes.com/el-nido-resorts-miniloc-island-palawan-islands-philippines/sale?gce_sls=0&utm_source=SE&utm_medium=Hub&utm_campaign=Philippines_2017
+
+  - title: Relaxing Singapore & Bohol city-to-beach holiday
+    category: palawan
+    location: M Social Singapore & Amorita Resort
+    description: A Singapore and Bohol break, combining luxurious city and beach stays, with all travel
+    price: 1729
+    price-description: per person for 9 nights
+    saved: 25
+    link: https://www.secretescapes.com/relaxing-singapore-and-bohol-city-to-beach-holiday-m-social-singapore-and-amorita-resort-philippines/sale?utm_source=SE&utm_medium=Hub&utm_campaign=Philippines_2017&gce_sls=1
+
+  - title: Hong Kong & Philippines holiday
+    category: palawan
+    location: Island Pacific, Hong Kong & Amorita Resort, Bohol
+    description: A Hong Kong landing pad and Philippines island idyll, with travel and perks
+    price: 1689
+    price-description: per person for 9 nights
+    saved: 25
+    link: https://www.secretescapes.com/hong-kong-and-philippines-holiday-island-pacific-hong-kong-and-amorita-resort-bohol/sale?utm_source=SE&utm_medium=Hub&utm_campaign=Philippines_2017&gce_sls=1
