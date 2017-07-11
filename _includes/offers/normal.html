@@ -2,6 +2,12 @@
 
   <a id="card-link-{{ offer.title | slugify }}" class="offer__link" href="{{ offer.link }}"><span class="btn btn--se btn--solid">View Offer</span></a>
 
+  {% if offer.package %}
+  <div class="offer__package invert-text">
+    <span class="title title--tiny title--upper title--display">Win £2,000 with this package</span>
+  </div>
+  {% endif %}
+
   <div class="offer__image bg-image--ratio bg-image--ratio-3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{% if offer.class %}{{ offer.class }}{% else %}{{ offer.title | slugify }}{% endif %}.jpg')">
   </div>
 

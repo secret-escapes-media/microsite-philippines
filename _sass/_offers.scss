@@ -177,6 +177,27 @@
       }
     }
   }
+
+
+  // Overlay to show eligible package holidays
+  &__package {
+    position: absolute;
+    z-index: 10;
+    top: -15px;
+    left: -15px;
+    width: 150px;
+    height: 150px;
+    padding: 2.5em 1em;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/bg/title-banner--pattern.png');
+    background-color: #ff8c00;
+    border: 2px solid rgba($black,0.2);
+    border-radius: 1000px;
+    text-align: center;
+    pointer-events: none;
+  }
+
 }
 
 
